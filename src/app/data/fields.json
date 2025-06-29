@@ -1,0 +1,117 @@
+{
+    "hero": {
+        "title": "Votre développeur",
+        "title_primary": "de rêve",
+        "description": "Je contribue a créer des applications performantes et",
+        "description_primary": "intuituives"
+    },
+    "presentation": {
+        "title": "Présentation",
+        "imagePath": "/ilias-round.jpg",
+        "name": "Ilias",
+        "surname": "Assadki",
+        "description": "Développeur Web et Logiciel"
+    },
+    "areasOfExpertise": {
+        "title": "Mes domaines d'expertise",
+        "areasOfExpertiseList": [
+            {
+                "title": "Développement web",
+                "imagePath": "/services-image.png",
+                "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
+            },
+            {
+                "title": "UI/UX Design",
+                "imagePath": "/services-image.png",
+                "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
+            },
+            {
+                "title": "Gestion de BDD",
+                "imagePath": "/services-image.png",
+                "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
+            },
+            {
+                "title": "Développement d'applis mobiles",
+                "imagePath": "/services-image.png",
+                "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
+            },
+            {
+                "title": "Conception UML",
+                "imagePath": "/services-image.png",
+                "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
+            },
+            {
+                "title": "Webdesign",
+                "imagePath": "/services-image.png",
+                "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
+            }
+        ]
+    },
+    "prices": {
+        "title": "Nos tarifs",
+        "pricesList": [
+            {
+                "name": "Standard",
+                "description": "Une prestation web",
+                "price": 600,
+                "subscription": 0,
+                "option1": "Prestation web",
+                "option2": "Maintenance",
+                "option3": "Plus",
+                "option4": "Plus"
+            },
+            {
+                "name": "Premium",
+                "description": "Une prestation web + maintenance",
+                "price": 700,
+                "subscription": 20,
+                "option1": "Prestation web",
+                "option2": "Maintenance",
+                "option3": "Plus",
+                "option4": "Plus"
+            },
+            {
+                "name": "All In",
+                "description": "Une prestation web + maintenance et plus",
+                "price": 800,
+                "subscription": 30,
+                "option1": "Prestation web",
+                "option2": "Maintenance",
+                "option3": "Plus",
+                "option4": "Plus"
+            }
+        ]
+    },
+    "faqs": {
+        "title": "FAQ",
+        "FaqsList": [
+            {
+                "question": "Combien de temps faut-il pour créer un site web ?",
+                "answer": "Le délai de création d'un site web dépend de sa complexité. En général, cela peut prendre entre 2 à 6 semaines."
+            },
+            {
+                "question": "Proposez-vous des presentation de référencement ?",
+                "answer": "Oui, nous proposons des presentation de référencement pour améliorer la visibilité de votre site sur les moteurs de recherche."
+            },
+            {
+                "question": "Puis-je mettre à jour mon site moi-même ?",
+                "answer": "Oui, nous vous formons à l'utilisation de votre site afin que vous puissiez effectuer des mises à jour facilement."
+            }
+        ]
+    },
+    "contact": {
+        "title": "Nous contacter",
+        "imagePath": "/calendly.png",
+        "heading": "Demandez votre site web professionnel en quelques étapes",
+        "text": "Besoin d'accompagnement pour donner vie à votre présence en ligne ? Notre expertise en développement web transformera votre vision en un site performant et attractif.",
+        "step1": "Remplissez le formulaire de contact",
+        "step2": "Nous analysons vos besoins",
+        "step3": "Et votre projet web prend forme !",
+        "form": {
+            "name": "Nom",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Envoyer"
+        }
+    }
+}

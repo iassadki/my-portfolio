@@ -1,8 +1,96 @@
 @import "tailwindcss";
 
+/* TAILWIND CSS  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-primary: #4361EE;
+  --color-secondary: #A9D0FF;
+  --color-action: #DDE3FF;
+  --color-grey: #EAEAEA;
+  --color-white: #FFFFFF;
+  --color-black: #282828;
+}
+
+@layer base {
+  /* Import de la police Nunito Sans */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
+
+  /* Configuration de base */
+  html {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  /* Typographie Headlines */
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 50px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  /* Paragraphe */
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}
+
+@layer components {
+
+  /* Classes utilitaires personnalisées */
+  .headline-1 {
+    @apply text-[48px] leading-[60px] font-bold;
+  }
+
+  .headline-2 {
+    @apply text-[34px] leading-[50px] font-semibold;
+  }
+
+  .headline-3 {
+    @apply text-[28px] leading-[38px] font-semibold;
+  }
+
+  .headline-4 {
+    @apply text-[18px] leading-[22px] font-medium;
+  }
+
+  .paragraph {
+    @apply text-[14px] leading-[24px] font-normal;
+  }
+}
+
+
+
+/* OLD CSS  */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* --foreground: #FFFFFF; */
 }
 
 @theme inline {
@@ -14,7 +102,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
