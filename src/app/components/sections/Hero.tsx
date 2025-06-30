@@ -2,7 +2,7 @@ import Image from "next/image";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import ButtonSecondary from "../ui/ButtonSecondary";
 
-const Hero = () => {
+const Hero: React.FC = () => {    
     return (
         <section className="relative w-full">
             <div className="relative w-full h-[600px]">
