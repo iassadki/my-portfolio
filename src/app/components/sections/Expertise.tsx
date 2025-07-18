@@ -6,7 +6,7 @@ const Expertise: React.FC = () => {
     const { expertise } = fields;
 
     return (
-        <section className="w-full py-16 bg-white">
+        <section className="w-full py-16 bg-gray-50">
             <h2 className="text-3xl font-bold text-center text-black mb-12">
                 {expertise.title}
             </h2>

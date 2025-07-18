@@ -5,7 +5,6 @@
         "description": "Je contribue a créer des applications performantes et",
         "description_primary": "intuituives"
     },
-
     "presentation": {
         "title": "Présentation",
         "imagePath": "/ilias-round.jpg",
@@ -13,7 +12,6 @@
         "surname": "Assadki",
         "description": "Développeur Web et Logiciel"
     },
-
     "expertise": {
         "title": "Mes domaines d'expertise",
         "expertiseData": [
@@ -49,7 +47,6 @@
             }
         ]
     },
-
     "skills": {
         "title": "Mes compétences",
         "skillsCategories": [
@@ -58,27 +55,27 @@
                 "skills": [
                     {
                         "title": "HTML",
-                        "imagePath": "/html.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                     },
                     {
                         "title": "CSS",
-                        "imagePath": "/css.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                     },
                     {
                         "title": "JavaScript",
-                        "imagePath": "/javascript.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                     },
                     {
                         "title": "React",
-                        "imagePath": "/react.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                     },
                     {
                         "title": "Next.js",
-                        "imagePath": "/next.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
                     },
                     {
                         "title": "TypeScript",
-                        "imagePath": "/typescript.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                     }
                 ]
             },
@@ -87,19 +84,19 @@
                 "skills": [
                     {
                         "title": "Node.js",
-                        "imagePath": "/nodejs.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                     },
                     {
                         "title": "Python",
-                        "imagePath": "/python.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                     },
                     {
                         "title": "Java",
-                        "imagePath": "/java.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
                     },
                     {
                         "title": "PHP",
-                        "imagePath": "/php.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
                     }
                 ]
             },
@@ -108,19 +105,15 @@
                 "skills": [
                     {
                         "title": "MySQL",
-                        "imagePath": "/mysql.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
                     },
                     {
                         "title": "PostgreSQL",
-                        "imagePath": "/postgresql.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                     },
                     {
                         "title": "MongoDB",
-                        "imagePath": "/mongodb.svg"
-                    },
-                    {
-                        "title": "Firebase",
-                        "imagePath": "/firebase.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                     }
                 ]
             },
@@ -129,46 +122,104 @@
                 "skills": [
                     {
                         "title": "Git",
-                        "imagePath": "/git.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                     },
                     {
                         "title": "Docker",
-                        "imagePath": "/docker.svg"
-                    },
-                    {
-                        "title": "VS Code",
-                        "imagePath": "/vscode.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
                     },
                     {
                         "title": "Figma",
-                        "imagePath": "/figma.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                     }
                 ]
             }
         ]
     },
-
     "projects": {
         "title": "Mes projets",
         "projectsData": [
             {
                 "type": "UI/UX Design",
                 "title": "Projet 1",
-                "imagePath": "/project1.jpg",
-                "description": "Description du projet 1"
+                "category": "UI/UX Design",
+                "imagePath": "/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
             },
             {
                 "type": "UI/UX Design",
                 "title": "Projet 2",
-                "imagePath": "/project2.jpg",
-                "description": "Description du projet 2"
+                "category": "E-Commerce",
+                "imagePath": "/projects/travels.jpg",
+                "description": "Description du projet 2",
+                "link": "https://example.com/project1"
             },
             {
                 "type": "UI/UX Design",
                 "title": "Projet 3",
-                "imagePath": "/project3.jpg",
-                "description": "Description du projet 3"
+                "category": "Web App",
+                "imagePath": "/projects/travels.jpg",
+                "description": "Description du projet 3",
+                "link": "https://example.com/project1"
+            },
+            {
+                "type": "UI/UX Design",
+                "title": "Projet 1",
+                "category": "UI/UX Design",
+                "imagePath": "/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "type": "UI/UX Design",
+                "title": "Projet 2",
+                "category": "E-Commerce",
+                "imagePath": "/projects/travels.jpg",
+                "description": "Description du projet 2",
+                "link": "https://example.com/project1"
+            },
+            {
+                "type": "UI/UX Design",
+                "title": "Projet 3",
+                "category": "Web App",
+                "imagePath": "/projects/travels.jpg",
+                "description": "Description du projet 3",
+                "link": "https://example.com/project1"
             }
         ]
+    },
+    "companys": {
+        "title": "Entreprises avec lesquelles j'ai travaillé",
+        "companysData": [
+            {
+                "name": "Entreprise 1",
+                "imagePath": "/companys/euro-services.jpg"
+            },
+            {
+                "name": "Entreprise 2",
+                "imagePath": "/companys/mairie-asnieres.jpg"
+            },
+            {
+                "name": "Entreprise 3",
+                "imagePath": "/companys/all-in-appli.jpg"
+            },
+            {
+                "name": "Entreprise 4",
+                "imagePath": "/companys/smc.jpg"
+            },
+            {
+                "name": "Entreprise 5",
+                "imagePath": "/companys/dgfip.jpg"
+            }
+        ]
+    },
+    "resume": {
+        "title": "Mon CV",
+        "description": "Mon CV est disponible et téléchargeable. N'hésitez pas à le consulter pour en savoir plus sur mon parcours et mes compétences en développement web.",
+        "cvLink": "/cv.pdf"
+    },
+    "contact": {
+        "title": "Contactez-moi"
     }
 }
