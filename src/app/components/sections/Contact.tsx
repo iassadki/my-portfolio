@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import fields from '@/app/data/fields.json';
-import Image from "next/image";
+// import Image from "next/image";
 import ButtonPrimary from "@/app/components/ui/ButtonPrimary";
 
 interface FormData {

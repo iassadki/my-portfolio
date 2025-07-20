@@ -82,7 +82,7 @@ const Presentation: React.FC = () => {
                         </div>
                         <div>
                             <p className="text-2xl font-bold text-gray-800 m-0 leading-tight">+2</p>
-                            <p className="text-base text-gray-600 m-0 leading-tight">Ans d'expérience</p>
+                            <p className="text-base text-gray-600 m-0 leading-tight">Ans d`&apos`expérience</p>
                         </div>
                     </div>
                 </div>

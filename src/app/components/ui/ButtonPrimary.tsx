@@ -4,6 +4,7 @@ interface ButtonPrimaryProps {
     children: React.ReactNode;
     onClick?: () => void;
     href?: string;
+    target?: string;
     type?: 'button' | 'submit' | 'reset';
     disabled?: boolean;
     className?: string;
@@ -14,6 +15,7 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
     children,
     onClick,
     href,
+    target = '_self',
     type = 'button',
     disabled = false,
     className = '',
@@ -44,6 +46,7 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
         return (
             <a
                 href={href}
+                target={target}
                 className={baseClasses}
                 id={id}
             >
