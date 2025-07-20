@@ -216,10 +216,21 @@
     },
     "resume": {
         "title": "Mon CV",
-        "description": "Mon CV est disponible et téléchargeable. N'hésitez pas à le consulter pour en savoir plus sur mon parcours et mes compétences en développement web.",
-        "cvLink": "/cv.pdf"
+        "preview": "Aperçu",
+        "cvLink": "/cv.pdf",
+        "description": "Mon CV est disponible et téléchargeable. N'hésitez pas à le consulter pour en savoir plus sur mon parcours et mes compétences en développement web."
     },
     "contact": {
-        "title": "Contactez-moi"
+        "title": "Contactez-moi",
+        "placeHolder": "Entrons en contact",
+        "description": "Si vous avez un projet en tête ou si vous souhaitez discuter de vos besoins en développement web, n'hésitez pas à me contacter. Je suis là pour vous aider à concrétiser vos idées et à créer des solutions sur mesure.",
+        "form": {
+            "name": "Nom",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Envoyer",
+            "successMessage": "Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.",
+            "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
+        }
     }
 }

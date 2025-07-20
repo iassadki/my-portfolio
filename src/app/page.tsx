@@ -11,7 +11,7 @@ import Resume from "./components/sections/Resume";
 import Contact from "../app/components/sections/Contact";
 import Footer from "../app/components/layout/Footer";
 
-import '../../src/app/globals.css'; // ou le bon chemin vers le fichier
+import '../../src/app/globals.css';
 
 export default function Home() {
   return (
