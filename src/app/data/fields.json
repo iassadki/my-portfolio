@@ -250,18 +250,23 @@
         "title": "Entreprises avec lesquelles j'ai travaillé",
         "companysData": [
             {
+                "name": "Euro Services",
                 "imagePath": "/companys/euro-services.jpg"
             },
             {
+                "name": "Mairie d'Asnières",
                 "imagePath": "/companys/mairie-asnieres.jpg"
             },
             {
+                "name": "All In Appli",
                 "imagePath": "/companys/all-in-appli.jpg"
             },
             {
+                "name": "SMC",
                 "imagePath": "/companys/smc.jpg"
             },
             {
+                "name": "DGFIP",
                 "imagePath": "/companys/dgfip.jpg"
             }
         ]

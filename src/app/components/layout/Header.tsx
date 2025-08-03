@@ -17,28 +17,33 @@ const Header = () => {
             <nav className="justify-self-center">
                 <ul className="flex list-none m-0 p-0 font-medium text-black">
                     <li>
-                        <Link href="/" className="text-decoration-none transition-colors hover:text-primary">
+                        <Link href="/presentation" className="text-decoration-none transition-colors hover:text-primary">
                             Présentation
                         </Link>
                     </li>
                     <li className="ml-6">
-                        <Link href="/presentation" className="text-decoration-none transition-colors hover:text-primary">
+                        <Link href="#expertise" className="text-decoration-none transition-colors hover:text-primary">
                             Expertise
                         </Link>
                     </li>
                     <li className="ml-6">
-                        <Link href="/projets" className="text-decoration-none transition-colors hover:text-primary">
+                        <Link href="#skills" className="text-decoration-none transition-colors hover:text-primary">
+                            Compétences
+                        </Link>
+                    </li>
+                    <li className="ml-6">
+                        <Link href="#projects" className="text-decoration-none transition-colors hover:text-primary">
                             Projets
                         </Link>
                     </li>
                     <li className="ml-6">
-                        <Link href="/methode" className="text-decoration-none transition-colors hover:text-primary">
-                            CV
+                        <Link href="#experiences" className="text-decoration-none transition-colors hover:text-primary">
+                            Experiences
                         </Link>
                     </li>
                     <li className="ml-6">
-                        <Link href="/contact" className="text-decoration-none transition-colors hover:text-primary">
-                            Contact
+                        <Link href="#resume" className="text-decoration-none transition-colors hover:text-primary">
+                            CV
                         </Link>
                     </li>
                 </ul>
