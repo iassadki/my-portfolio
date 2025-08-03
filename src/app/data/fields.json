@@ -17,27 +17,27 @@
         "expertiseData": [
             {
                 "title": "Développement web",
-                "imagePath": "/devicon-plain.svg",
+                "imagePath": "/dev-icon.svg",
                 "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
             },
             {
                 "title": "UI/UX Design",
-                "imagePath": "/uiux.svg",
+                "imagePath": "/ux-ui-icon.svg",
                 "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
             },
             {
                 "title": "Gestion de BDD",
-                "imagePath": "/bdd.svg",
+                "imagePath": "/database-icon.svg",
                 "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
             },
             {
                 "title": "Développement d'applications",
-                "imagePath": "/mobile_app.svg",
+                "imagePath": "/mobile-icon.svg",
                 "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
             },
             {
                 "title": "Conception UML",
-                "imagePath": "/uml.svg",
+                "imagePath": "/uml-icon.svg",
                 "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
             },
             {
@@ -140,51 +140,108 @@
         "title": "Mes projets",
         "projectsData": [
             {
-                "type": "UI/UX Design",
-                "title": "Projet 1",
-                "category": "UI/UX Design",
-                "imagePath": "/projects/travels.jpg",
+                "title": "AP Stage",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
-                "type": "UI/UX Design",
-                "title": "Projet 2",
-                "category": "E-Commerce",
-                "imagePath": "/projects/travels.jpg",
-                "description": "Description du projet 2",
-                "link": "https://example.com/project1"
-            },
-            {
-                "type": "UI/UX Design",
-                "title": "Projet 3",
-                "category": "Web App",
-                "imagePath": "/projects/travels.jpg",
-                "description": "Description du projet 3",
-                "link": "https://example.com/project1"
-            },
-            {
-                "type": "UI/UX Design",
-                "title": "Projet 1",
-                "category": "UI/UX Design",
-                "imagePath": "/projects/travels.jpg",
+                "title": "Efrei CRUD",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
-                "type": "UI/UX Design",
-                "title": "Projet 2",
-                "category": "E-Commerce",
-                "imagePath": "/projects/travels.jpg",
-                "description": "Description du projet 2",
+                "title": "Planning Eplucheurs",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
-                "type": "UI/UX Design",
-                "title": "Projet 3",
-                "category": "Web App",
-                "imagePath": "/projects/travels.jpg",
-                "description": "Description du projet 3",
+                "title": "Space Invaders",
+                "category": "Jeu",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "RPG IHM",
+                "category": "Jeu",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Exotic cars",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Itunes Seeker",
+                "category": "Application mobile",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Business Card Generator",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Portal Asso",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Wheelchair IOT Radar",
+                "category": "Application mobile",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Ishak School",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "TeamBrains",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Bus-Message-Generator",
+                "category": "Application mobile",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Portfolio Ilias",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
+                "link": "https://example.com/project1"
+            },
+            {
+                "title": "Studio 1601",
+                "category": "Application web",
+                "imagePath": "/public/projects/travels.jpg",
+                "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             }
         ]
@@ -193,23 +250,18 @@
         "title": "Entreprises avec lesquelles j'ai travaillé",
         "companysData": [
             {
-                "name": "Entreprise 1",
                 "imagePath": "/companys/euro-services.jpg"
             },
             {
-                "name": "Entreprise 2",
                 "imagePath": "/companys/mairie-asnieres.jpg"
             },
             {
-                "name": "Entreprise 3",
                 "imagePath": "/companys/all-in-appli.jpg"
             },
             {
-                "name": "Entreprise 4",
                 "imagePath": "/companys/smc.jpg"
             },
             {
-                "name": "Entreprise 5",
                 "imagePath": "/companys/dgfip.jpg"
             }
         ]
@@ -224,6 +276,14 @@
         "title": "Contactez-moi",
         "placeHolder": "Entrons en contact",
         "description": "Si vous avez un projet en tête ou si vous souhaitez discuter de vos besoins en développement web, n'hésitez pas à me contacter. Je suis là pour vous aider à concrétiser vos idées et à créer des solutions sur mesure.",
+        "placeHolderEmail": "Email",
+        "email": "ilias.assadki@gmail.com",
+        "placeHolderPhone": "Téléphone",
+        "phone": "+33 6 47 21 03 03",
+        "placeHolderLocation": "Localisation",
+        "location": "Paris, France",
+        "placeHolderAvailablity": "Disponibilités",
+        "availablity": "Lun - Ven, 9h - 18h",
         "form": {
             "name": "Nom",
             "email": "Email",
