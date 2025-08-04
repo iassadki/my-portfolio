@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import { useActiveSection } from "../../hooks/useActiveSection";
@@ -26,14 +27,14 @@ const Header = () => {
             <div className="flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="text-xl font-bold text-primary hover:text-primary-600 transition-colors">
-                    iassadki
-                    {/* <Image
-                        src="/images/header/ia.png"
+                    {/* iassadki */}
+                    <Image
+                        src="/images/header/ia-logo.png"
                         alt="Logo Header"
-                        width={40}
-                        height={40}
+                        width={60}
+                        height={60}
                         className="object-contain"
-                    /> */}
+                    />
                 </Link>
 
                 {/* Desktop Nav */}

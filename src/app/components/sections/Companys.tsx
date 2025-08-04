@@ -29,7 +29,6 @@ const Companys: React.FC = () => {
                                     width={200}
                                     height={120}
                                     className="object-contain w-full h-full"
-                                    unoptimized
                                 />
                             </div>
                         </div>

@@ -24,7 +24,6 @@ const Presentation: React.FC = () => {
                         width={300}
                         height={300}
                         className="rounded-lg object-cover bg-blue-50"
-                        unoptimized
                     />
                 </div>
 

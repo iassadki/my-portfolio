@@ -9,7 +9,7 @@
     },
     "presentation": {
         "title": "Présentation",
-        "imagePath": "/images/presentation/ilias-round.jpg",
+        "imagePath": "/images/presentation/ilias-round.png",
         "name": "Ilias",
         "surname": "Assadki",
         "description": "Développeur Web et Logiciel"
@@ -253,23 +253,23 @@
         "companysData": [
             {
                 "name": "Euro Services",
-                "imagePath": "/images/companys/euro-services.jpg"
+                "imagePath": "/images/companys/euro-services.png"
             },
             {
                 "name": "Mairie d'Asnières",
-                "imagePath": "/images/companys/mairie-asnieres.jpg"
+                "imagePath": "/images/companys/mairie-asnieres.png"
             },
             {
                 "name": "All In Appli",
-                "imagePath": "/images/companys/all-in-appli.jpg"
+                "imagePath": "/images/companys/all-in-appli.png"
             },
             {
                 "name": "SMC",
-                "imagePath": "/images/companys/smc.jpg"
+                "imagePath": "/images/companys/smc.png"
             },
             {
                 "name": "DGFIP",
-                "imagePath": "/images/companys/dgfip.jpg"
+                "imagePath": "/images/companys/dgfip.png"
             }
         ]
     },
