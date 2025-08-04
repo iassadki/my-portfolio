@@ -23,13 +23,13 @@ const Companys: React.FC = () => {
                         >
                             {/* Image de l'entreprise */}
                             <div className="relative w-full h-48 bg-white-200">
-                                {/* fill */}
                                 <Image
                                     src={item.imagePath}
                                     alt={item.name}
                                     width={200}
-                                    height={100}
-                                    className="object-contain w-full h-auto"
+                                    height={120}
+                                    className="object-contain w-full h-full"
+                                    unoptimized
                                 />
                             </div>
                         </div>
@@ -37,7 +37,7 @@ const Companys: React.FC = () => {
                 </div>
             </div>
         </section>
-
-    )}
+    );
+};
 
 export default Companys;
