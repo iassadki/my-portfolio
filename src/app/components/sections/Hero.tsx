@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
         <section id="hero" className="relative w-full">
             <div className="relative w-full h-[600px]">
                 <Image
-                    src="/gradient.png"
+                    src="/images/hero/gradient.png"
                     fill
                     className="object-cover"
                     alt="Hero banner"
