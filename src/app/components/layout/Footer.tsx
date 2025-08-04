@@ -14,7 +14,7 @@ const Footer = () => {
                             <span className="ml-2 text-lg">Ilias Assadki</span>
                         </div>
                         <p className="text-gray-100 mb-4 max-w-md">
-                            Développeur NextJS/NodeJS passionné par la création d`&apos`applications web modernes et performantes.
+                            Développeur NextJS/NodeJS passionné par la création d&apos;applications web modernes et performantes.
                         </p>
                         <div className="flex space-x-4">
                             {/* Réseaux sociaux */}
@@ -107,7 +107,7 @@ const Footer = () => {
                                 Politique de confidentialité
                             </Link>
                             <Link href="/terms" className="text-gray-100 hover:text-white text-sm transition-colors">
-                                Conditions d`&apos`utilisation
+                                Conditions d&apos;utilisation
                             </Link>
                         </div>
                     </div>
