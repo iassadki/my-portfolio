@@ -23,6 +23,7 @@ const Companys: React.FC = () => {
                         >
                             {/* Image de l'entreprise */}
                             <div className="relative w-full h-48 bg-white-200">
+                                
                                 <Image
                                     src={item.imagePath}
                                     alt={item.name}
