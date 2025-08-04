@@ -27,13 +27,14 @@ const Header = () => {
             <div className="flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="text-xl font-bold text-primary hover:text-primary-600 transition-colors">
-                    <Image
+                    iassadki
+                    {/* <Image
                         src="/images/header/ia.png"
                         alt="Logo Header"
                         width={40}
                         height={40}
                         className="object-contain"
-                    />
+                    /> */}
                 </Link>
 
                 {/* Desktop Nav */}
