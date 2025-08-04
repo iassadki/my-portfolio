@@ -2,6 +2,8 @@
     "hero": {
         "title": "Votre développeur",
         "title_primary": "de rêve",
+        "imagePath": "/images/hero/gradient.png",
+        "name": "Gradient",
         "description": "Je contribue a créer des applications performantes et",
         "description_primary": "intuitives"
     },

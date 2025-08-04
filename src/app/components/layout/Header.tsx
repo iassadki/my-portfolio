@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; // Icônes burger et close
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import { useActiveSection } from "../../hooks/useActiveSection";
 
@@ -26,7 +27,13 @@ const Header = () => {
             <div className="flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="text-xl font-bold text-primary hover:text-primary-600 transition-colors">
-                    1601
+                    <Image
+                        src="/images/header/ia.png"
+                        alt="Logo Header"
+                        width={40}
+                        height={40}
+                        className="object-contain"
+                    />
                 </Link>
 
                 {/* Desktop Nav */}

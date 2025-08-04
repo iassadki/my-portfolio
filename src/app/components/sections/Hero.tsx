@@ -1,32 +1,35 @@
 import Image from "next/image";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import ButtonSecondary from "../ui/ButtonSecondary";
+import fields from '@/app/data/fields.json';
 
-const Hero: React.FC = () => {    
+const Hero: React.FC = () => { 
+    const { hero } = fields;
+
     return (
         <section id="hero" className="relative w-full">
             <div className="relative w-full h-[600px]">
                 <Image
-                    src="/images/hero/gradient.png"
+                    src={hero.imagePath}
+                    alt={hero.name}
                     fill
                     className="object-cover"
-                    alt="Hero banner"
                 />
 
                 {/* First phrase */}
                 <h1 className="absolute top-[35%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-jakarta font-bold text-h1 text-black">
-                    Votre développeur
+                    {hero.title}{" "}
                 </h1>
 
                 {/* Second phrase */}
                 <h1 className="absolute top-[47%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-jakarta font-bold text-h1 text-primary underline">
-                    de rêve
+                    {hero.title_primary}
                 </h1>
 
                 {/* Third phrase */}
                 <h4 className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-jakarta font-medium text-h4 text-black">
-                    Je contribue à créer des applications performantes et{" "}
-                    <span className="text-primary underline">intuitives</span>
+                    {hero.description}{" "}
+                    <span className="text-primary underline">{hero.description_primary}</span>
                 </h4>
 
                 {/* Button container */}
