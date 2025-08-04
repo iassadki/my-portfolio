@@ -34,6 +34,7 @@ const Header = () => {
                         width={60}
                         height={60}
                         className="object-contain"
+                        unoptimized
                     />
                 </Link>
 
