@@ -8,7 +8,7 @@ const Presentation: React.FC = () => {
     const { presentation } = fields;
 
     return (
-        <section className="px-8 pt-0 pb-16">
+        <section id="presentation" className="px-8 pt-0 pb-16">
             {/* Titre de la page */}
             <h2 className="text-3xl font-bold text-black text-center mt-12 mb-12">
                 {presentation.title}

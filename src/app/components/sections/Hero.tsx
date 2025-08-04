@@ -4,7 +4,7 @@ import ButtonSecondary from "../ui/ButtonSecondary";
 
 const Hero: React.FC = () => {    
     return (
-        <section className="relative w-full">
+        <section id="hero" className="relative w-full">
             <div className="relative w-full h-[600px]">
                 <Image
                     src="/gradient.png"

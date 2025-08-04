@@ -6,7 +6,7 @@ const Skills: React.FC = () => {
     const { skills } = fields;
 
     return (
-        <section className="w-full py-16 bg-white">
+        <section id="skills" className="w-full py-16 bg-white">
             <h2 className="text-3xl font-bold text-center text-black mb-12">
                 {skills.title}
             </h2>

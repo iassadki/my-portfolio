@@ -7,7 +7,7 @@ const Companys: React.FC = () => {
     const { companys } = fields;
 
     return (
-        <section className="w-full py-16 bg-white">
+        <section id="experiences" className="w-full py-16 bg-white">
             {/* Titre de la section */}
             <h2 className="text-3xl font-bold text-center text-black mb-12">
                 {companys.title}
@@ -27,8 +27,9 @@ const Companys: React.FC = () => {
                                 <Image
                                     src={item.imagePath}
                                     alt={item.name}
-                                    fill
-                                    className="object-contain"
+                                    width={200}
+                                    height={100}
+                                    className="object-contain w-full h-auto"
                                 />
                             </div>
                         </div>

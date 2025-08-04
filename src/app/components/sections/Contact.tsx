@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
     const isFormValid = formData.name.trim() && formData.email.trim() && formData.message.trim();
 
     return (
-        <section className="w-full py-16 bg-white">
+        <section id="contact" className="w-full py-16 bg-white">
             <div className="max-w-6xl mx-auto px-8">
                 <h2 className="text-3xl font-bold text-center text-black mb-4">
                     {contact.title}

@@ -17,32 +17,32 @@
         "expertiseData": [
             {
                 "title": "Développement web",
-                "imagePath": "/dev-icon.svg",
+                "imagePath": "/images/expertise/devicon-plain.svg",
                 "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
             },
             {
                 "title": "UI/UX Design",
-                "imagePath": "/ux-ui-icon.svg",
+                "imagePath": "/images/expertise/ux-ui-icon.svg",
                 "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
             },
             {
                 "title": "Gestion de BDD",
-                "imagePath": "/database-icon.svg",
+                "imagePath": "/images/expertise/database-icon.svg",
                 "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
             },
             {
                 "title": "Développement d'applications",
-                "imagePath": "/mobile-icon.svg",
+                "imagePath": "/images/expertise/mobile-icon.svg",
                 "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
             },
             {
                 "title": "Conception UML",
-                "imagePath": "/uml-icon.svg",
+                "imagePath": "/images/expertise/uml-icon.svg",
                 "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
             },
             {
                 "title": "Webdesign",
-                "imagePath": "/webdesign.svg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
             }
         ]
@@ -142,105 +142,105 @@
             {
                 "title": "AP Stage",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Efrei CRUD",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Planning Eplucheurs",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Space Invaders",
                 "category": "Jeu",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "RPG IHM",
                 "category": "Jeu",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Exotic cars",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Itunes Seeker",
                 "category": "Application mobile",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Business Card Generator",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Portal Asso",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Wheelchair IOT Radar",
                 "category": "Application mobile",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Ishak School",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "TeamBrains",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Bus-Message-Generator",
                 "category": "Application mobile",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Portfolio Ilias",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             },
             {
                 "title": "Studio 1601",
                 "category": "Application web",
-                "imagePath": "/public/projects/travels.jpg",
+                "imagePath": "/images/expertise/webdesign-icon.svg",
                 "description": "Description du projet 1",
                 "link": "https://example.com/project1"
             }

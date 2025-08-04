@@ -21,6 +21,7 @@
   /* Configuration de base */
   html {
     font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
   }
 
   /* Typographie Headlines */
