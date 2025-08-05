@@ -4,6 +4,7 @@ interface ButtonSecondaryProps {
     children: React.ReactNode;
     onClick?: () => void;
     href?: string;
+    target?: string;
     type?: 'button' | 'submit' | 'reset';
     disabled?: boolean;
     className?: string;
@@ -14,6 +15,7 @@ const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({
     children,
     onClick,
     href,
+    target = '_self',
     type = 'button',
     disabled = false,
     className = '',
@@ -23,7 +25,7 @@ const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({
     bg-action text-primary
     px-7 py-3 
     rounded-full
-    border-2
+    border-1
     border-primary
     text-sm font-bold
     hover:bg-action 
@@ -44,6 +46,7 @@ const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({
         return (
             <a
                 href={href}
+                target={target}
                 className={baseClasses}
                 id={id}
             >

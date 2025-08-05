@@ -30,8 +30,8 @@ const Hero: React.FC = () => {
 
                 {/* Button container */}
                 <div className="absolute top-[73%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-4">
-                    <ButtonPrimary>Voir mes projets</ButtonPrimary>
-                    <ButtonSecondary>Me contacter</ButtonSecondary>
+                    <ButtonPrimary href="#projects">Voir mes projets</ButtonPrimary>
+                    <ButtonSecondary href="#contact">Me contacter</ButtonSecondary>
                 </div>
             </div>
         </section>

@@ -19,7 +19,7 @@ const Footer = () => {
                         <div className="flex space-x-4">
                             {/* Réseaux sociaux */}
                             <a
-                                href="https://github.com"
+                                href="https://github.com/iassadki"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-200 hover:text-white transition-colors"
@@ -29,7 +29,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/in/ilias-assadki/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-200 hover:text-white transition-colors"
@@ -39,7 +39,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                             <a
-                                href="mailto:contact@example.com"
+                                href="mailto:ilias.assadki@gmail.com"
                                 className="text-gray-200 hover:text-white transition-colors"
                             >
                                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,7 +69,8 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/cv" className="text-gray-100 hover:text-white transition-colors">
+                                <Link href="/resume/CV_Ilias_ASSADKI.pdf"
+                                    target="_blank" className="text-gray-100 hover:text-white transition-colors">
                                     CV
                                 </Link>
                             </li>
@@ -103,12 +104,12 @@ const Footer = () => {
                             © {currentYear} Ilias Assadki. Tous droits réservés.
                         </p>
                         <div className="mt-4 md:mt-0 flex space-x-6">
-                            <Link href="/privacy" className="text-gray-100 hover:text-white text-sm transition-colors">
+                            {/* <Link href="/privacy" className="text-gray-100 hover:text-white text-sm transition-colors">
                                 Politique de confidentialité
                             </Link>
                             <Link href="/terms" className="text-gray-100 hover:text-white text-sm transition-colors">
                                 Conditions d&apos;utilisation
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>

@@ -23,9 +23,9 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
 }) => {
     const baseClasses = `
     bg-primary text-white
-    px-6 py-2 
+    px-7 py-3 
     rounded-full
-    border-2
+    border-1
     border-primary
     text-sm font-bold
     hover:bg-primary 

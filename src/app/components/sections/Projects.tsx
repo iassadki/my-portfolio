@@ -22,20 +22,23 @@ const Projects: React.FC = () => {
                             className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
                         >
                             {/* Image du projet */}
-                            <div className="relative w-100 h-50 bg-gray-200">
-                                <Image
-                                    src={item.imagePath}
-                                    alt={item.title}
-                                    fill
-                                    className="object-cover"
-                                />
-                                {/* Icône en haut à droite */}
-                                <div className="absolute top-4 left-83 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center">
-                                    <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                    </svg>
+                            <a href="#" className="hover:bg-green-700">
+
+                                <div className="relative w-100 h-50 bg-gray-200">
+                                    <Image
+                                        src={item.imagePath}
+                                        alt={item.title}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                    {/* Icône en haut à droite */}
+                                    <div className="absolute top-4 left-83 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center">
+                                        <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
 
                             {/* Contenu de la card */}
                             <div className="p-6">
