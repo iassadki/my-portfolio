@@ -72,6 +72,7 @@ const Projects: React.FC = () => {
                                         alt={item.title}
                                         fill
                                         className="object-cover"
+                                        unoptimized
                                     />
                                     {/* Icône en haut à droite */}
                                     <div className="absolute top-4 left-83 w-8 h-8 bg-white bg-opacity-70 rounded-full flex items-center justify-center">
