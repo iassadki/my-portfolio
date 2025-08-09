@@ -88,7 +88,13 @@ const Footer = () => {
                                 <span className="text-gray-100">UI/UX Design</span>
                             </li>
                             <li>
-                                <span className="text-gray-100">Applications Mobile</span>
+                                <span className="text-gray-100">Gestion de BDD</span>
+                            </li>
+                            <li>
+                                <span className="text-gray-100">Développement d&apos;applications mobiles</span>
+                            </li>
+                            <li>
+                                <span className="text-gray-100">Web Design</span>
                             </li>
                             <li>
                                 <span className="text-gray-100">Consulting</span>
