@@ -142,109 +142,102 @@
         "title": "Mes projets",
         "projectsData": [
             {
-                "title": "AP Stage",
+                "title": "Internship Report",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/internship-report.png",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
-            },
-            {
-                "title": "Efrei CRUD",
-                "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
-                "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/ap-stage-old"
             },
             {
                 "title": "Planning Eplucheurs",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/planning-eplucheurs"
             },
             {
                 "title": "Space Invaders",
                 "category": "Jeu",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/space-invaders"
             },
             {
                 "title": "RPG IHM",
                 "category": "Jeu",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/rpg-ihm"
             },
             {
                 "title": "Exotic cars",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/exotic-cars"
             },
             {
                 "title": "Itunes Seeker",
                 "category": "Application mobile",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/itunes-seeker"
             },
             {
                 "title": "Business Card Generator",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/business-card-generator"
             },
             {
                 "title": "Portal Asso",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/portal-asso"
             },
             {
                 "title": "Wheelchair IOT Radar",
                 "category": "Application mobile",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/wheelchair-radar"
             },
             {
                 "title": "Ishak School",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/ishak-school"
             },
             {
                 "title": "TeamBrains",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/TeamBrains"
             },
             {
                 "title": "Bus-Message-Generator",
                 "category": "Application mobile",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/bus-message-generator"
             },
             {
                 "title": "Portfolio Ilias",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/my-portfolio"
             },
             {
                 "title": "Studio 1601",
                 "category": "Application web",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "imagePath": "/images/projects/webdesign-icon.svg",
                 "description": "Description du projet 1",
-                "link": "https://example.com/project1"
+                "link": "https://github.com/iassadki/studio-1601"
             }
         ]
     },
