@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
     const { projects } = fields;
     const [activeFilter, setActiveFilter] = useState<string>("Application web");
 
-    const filters = ["Tout", "Application web", "Application mobile", "Jeu"];
+    const filters = ["Tout", "Application web", "Application mobile"];
 
     const filteredProjects = useMemo(() => {
         if (activeFilter === "Tout") {

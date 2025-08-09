@@ -151,91 +151,70 @@
             {
                 "title": "Planning Eplucheurs",
                 "category": "Application web",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/planning-eplucheurs.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/planning-eplucheurs"
             },
             {
-                "title": "Space Invaders",
-                "category": "Jeu",
-                "imagePath": "/images/projects/webdesign-icon.svg",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/space-invaders"
-            },
-            {
-                "title": "RPG IHM",
-                "category": "Jeu",
-                "imagePath": "/images/projects/webdesign-icon.svg",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/rpg-ihm"
-            },
-            {
                 "title": "Exotic cars",
                 "category": "Application web",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/exotic-cars.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/exotic-cars"
             },
             {
                 "title": "Itunes Seeker",
                 "category": "Application mobile",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/itunes-seeker.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/itunes-seeker"
             },
             {
                 "title": "Business Card Generator",
                 "category": "Application web",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/business-card-generator.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/business-card-generator"
             },
             {
                 "title": "Portal Asso",
                 "category": "Application web",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/portal-asso.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/portal-asso"
             },
             {
                 "title": "Wheelchair IOT Radar",
                 "category": "Application mobile",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/wheelchair-radar.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/wheelchair-radar"
             },
             {
                 "title": "Ishak School",
                 "category": "Application web",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/ishak-school.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/ishak-school"
             },
             {
                 "title": "TeamBrains",
                 "category": "Application web",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/team-brains.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/TeamBrains"
             },
             {
-                "title": "Bus-Message-Generator",
-                "category": "Application mobile",
-                "imagePath": "/images/projects/webdesign-icon.svg",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/bus-message-generator"
-            },
-            {
                 "title": "Portfolio Ilias",
                 "category": "Application web",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/ia-logo.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/my-portfolio"
             },
             {
                 "title": "Studio 1601",
                 "category": "Application web",
-                "imagePath": "/images/projects/webdesign-icon.svg",
+                "imagePath": "/images/projects/studio-1601.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/studio-1601"
             }
