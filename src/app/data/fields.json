@@ -142,11 +142,11 @@
         "title": "Mes projets",
         "projectsData": [
             {
-                "title": "Internship Report",
+                "title": "Intern Flow",
                 "category": "Application web",
-                "imagePath": "/images/projects/internship-report.png",
+                "imagePath": "/images/projects/intern-flow.png",
                 "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/ap-stage-old"
+                "link": "https://github.com/iassadki/intern-flow"
             },
             {
                 "title": "Planning Eplucheurs",
