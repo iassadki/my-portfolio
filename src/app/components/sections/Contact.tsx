@@ -184,7 +184,7 @@ const Contact: React.FC = () => {
                                     value={formData.name}
                                     onChange={handleInputChange}
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400 text-gray-900"
                                     placeholder="Votre nom complet"
                                 />
                             </div>
@@ -201,7 +201,7 @@ const Contact: React.FC = () => {
                                     value={formData.email}
                                     onChange={handleInputChange}
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400 text-gray-900"
                                     placeholder="votre.email@exemple.com"
                                 />
                             </div>
@@ -218,7 +218,7 @@ const Contact: React.FC = () => {
                                     value={formData.message}
                                     onChange={handleInputChange}
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-vertical placeholder:text-gray-400"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-vertical placeholder:text-gray-400 text-gray-900"
                                     placeholder="Décrivez votre projet ou votre demande..."
                                 />
                             </div>

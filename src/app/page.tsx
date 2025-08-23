@@ -8,7 +8,7 @@ import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Companys from "./components/sections/Companys";
 import Resume from "./components/sections/Resume";
-import Contact from "../app/components/sections/Contact";
+import Contact from "./components/sections/Contact";
 import Footer from "../app/components/layout/Footer";
 
 import '../../src/app/globals.css';
