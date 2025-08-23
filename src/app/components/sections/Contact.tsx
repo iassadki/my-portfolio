@@ -1,50 +1,59 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import fields from '@/app/data/fields.json';
-import ButtonPrimary from '@/app/components/ui/ButtonPrimary';
+// import Image from "next/image";
+import ButtonPrimary from "@/app/components/ui/ButtonPrimary";
 
-const Contact = () => {
+interface FormData {
+    name: string;
+    email: string;
+    message: string;
+}
+
+const Contact: React.FC = () => {
     const { contact } = fields;
-    const [loading, setLoading] = useState(false);
-    const [message, setMessage] = useState('');
+    const [formData, setFormData] = useState<FormData>({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setLoading(true);
-        setMessage('');
-
-        const formData = new FormData(e.currentTarget);
-        const data = {
-            name: formData.get('name') as string,
-            email: formData.get('email') as string,
-            subject: formData.get('subject') as string,
-            message: formData.get('message') as string,
-        };
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
 
         try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
-            });
+            // Simuler l'envoi du formulaire
+            await new Promise(resolve => setTimeout(resolve, 2000));
 
-            const result = await response.json();
+            // Ici vous pourriez ajouter votre logique d'envoi d'email
+            // Par exemple avec EmailJS, Nodemailer, ou une API
 
-            if (response.ok) {
-                setMessage('Message envoyé avec succès !');
-                (e.target as HTMLFormElement).reset();
-            } else {
-                setMessage(`Erreur : ${result.error}`);
-            }
+            console.log('Données du formulaire:', formData);
+
+            setSubmitStatus('success');
+            setFormData({ name: '', email: '', message: '' });
         } catch (error) {
-            setMessage('Erreur lors de l&apos;envoi du message');
+            console.error('Erreur lors de l\'envoi:', error);
+            setSubmitStatus('error');
         } finally {
-            setLoading(false);
+            setIsSubmitting(false);
         }
     };
+
+    const isFormValid = formData.name.trim() && formData.email.trim() && formData.message.trim();
 
     return (
         <section id="contact" className="w-full py-16 bg-white">
@@ -150,13 +159,15 @@ const Contact = () => {
                         </h3>
 
                         {/* Messages de statut */}
-                        {message && (
-                            <div className={`mb-6 p-4 rounded-lg ${
-                                message.includes('succès') 
-                                    ? 'bg-green-100 border border-green-400 text-green-700'
-                                    : 'bg-red-100 border border-red-400 text-red-700'
-                            }`}>
-                                {message}
+                        {submitStatus === 'success' && (
+                            <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                                {contact.form.successMessage}
+                            </div>
+                        )}
+
+                        {submitStatus === 'error' && (
+                            <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                                {contact.form.errorMessage}
                             </div>
                         )}
 
@@ -170,9 +181,11 @@ const Contact = () => {
                                     type="text"
                                     id="name"
                                     name="name"
+                                    value={formData.name}
+                                    onChange={handleInputChange}
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400 text-gray-900"
-                                    placeholder={contact.form.namePlaceholder}
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400"
+                                    placeholder="Votre nom complet"
                                 />
                             </div>
 
@@ -185,23 +198,11 @@ const Contact = () => {
                                     type="email"
                                     id="email"
                                     name="email"
+                                    value={formData.email}
+                                    onChange={handleInputChange}
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400 text-gray-900"
-                                    placeholder={contact.form.emailPlaceholder}
-                                />
-                            </div>
-
-                            {/* Sujet */}
-                            <div>
-                                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                                    {contact.form.subject}
-                                </label>
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    name="subject"
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400 text-gray-900"
-                                    placeholder={contact.form.subjectPlaceholder}
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors placeholder:text-gray-400"
+                                    placeholder="votre.email@exemple.com"
                                 />
                             </div>
 
@@ -214,19 +215,21 @@ const Contact = () => {
                                     id="message"
                                     name="message"
                                     rows={5}
+                                    value={formData.message}
+                                    onChange={handleInputChange}
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-vertical placeholder:text-gray-400 text-gray-900"
-                                    placeholder={contact.form.messagePlaceholder}
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-vertical placeholder:text-gray-400"
+                                    placeholder="Décrivez votre projet ou votre demande..."
                                 />
                             </div>
 
                             {/* Bouton d'envoi */}
                             <ButtonPrimary
                                 type="submit"
-                                disabled={loading}
+                                disabled={!isFormValid || isSubmitting}
                                 className="w-full flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                {loading ? (
+                                {isSubmitting ? (
                                     <>
                                         <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
