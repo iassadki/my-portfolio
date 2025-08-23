@@ -265,8 +265,13 @@
         "availablity": "Lun - Ven, 9h - 18h",
         "form": {
             "name": "Nom",
+            "namePlaceholder": "Votre nom complet",
             "email": "Email",
+            "emailPlaceholder": "votre.email@exemple.com",
+            "subject": "Sujet",
+            "subjectPlaceholder": "Le sujet de votre message",
             "message": "Message",
+            "messagePlaceholder": "Décrivez votre projet ou votre demande...",
             "submit": "Envoyer",
             "successMessage": "Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.",
             "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
