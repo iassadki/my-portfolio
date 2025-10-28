@@ -163,6 +163,13 @@
                 "link": "https://github.com/iassadki/exotic-cars"
             },
             {
+                "title": "Nomad",
+                "category": "Application mobile",
+                "imagePath": "/images/projects/nomad.png",
+                "description": "Description du projet 1",
+                "link": "https://github.com/iassadki/nomad"
+            },
+            {
                 "title": "Itunes Seeker",
                 "category": "Application mobile",
                 "imagePath": "/images/projects/itunes-seeker.png",
