@@ -177,6 +177,13 @@
                 "link": "https://github.com/iassadki/itunes-seeker"
             },
             {
+                "title": "My Dream Garage",
+                "category": "Application web",
+                "imagePath": "/images/projects/my-dream-garage.png",
+                "description": "Description du projet 1",
+                "link": "https://github.com/iassadki/my-dream-garage"
+            },
+            {
                 "title": "Business Card Generator",
                 "category": "Application web",
                 "imagePath": "/images/projects/business-card-generator.png",
