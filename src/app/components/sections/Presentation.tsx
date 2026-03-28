@@ -8,40 +8,40 @@ const Presentation: React.FC = () => {
     const { presentation } = fields;
 
     return (
-        <section id="presentation" className="px-8 pt-0 pb-16">
+        <section id="presentation" className="px-4 sm:px-8 pt-0 pb-16">
             {/* Titre de la page */}
-            <h2 className="text-3xl font-bold text-black text-center mt-12 mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-black text-center mt-8 sm:mt-12 mb-8 sm:mb-12">
                 {presentation.title}
             </h2>
 
             {/* Section principale avec photo et informations */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-center">
                 {/* Photo */}
                 <div className="flex justify-center">
                     <Image
                         src={presentation.imagePath}
                         alt={presentation.name}
-                        width={300}
-                        height={300}
-                        className="rounded-lg object-cover bg-blue-50"
+                        width={250}
+                        height={250}
+                        className="rounded-lg object-cover bg-blue-50 w-auto h-auto max-w-xs sm:max-w-sm"
                         unoptimized
                     />
                 </div>
 
                 {/* Informations */}
                 <div>
-                    <div className="mb-4">
-                        <h1 className="inline text-4xl font-bold text-primary mr-2">
+                    <div className="mb-4 mt-6 sm:mt-0">
+                        <h1 className="inline text-2xl sm:text-4xl font-bold text-primary mr-2">
                             {presentation.name}
                         </h1>
-                        <h1 className="inline text-4xl font-bold text-black">
+                        <h1 className="inline text-2xl sm:text-4xl font-bold text-black">
                             {presentation.surname}
                         </h1>
                     </div>
-                    <p className="text-xl text-black mb-8">
+                    <p className="text-sm sm:text-xl text-black mb-6 sm:mb-8">
                         &rarr; {presentation.description}
                     </p>
-                    <div className="flex gap-4">
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                         <ButtonPrimary href="/resume/CV_Ilias_ASSADKI.pdf"
                             target="_blank">
                             Télécharger mon CV
@@ -53,12 +53,12 @@ const Presentation: React.FC = () => {
 
             {/* Section statistiques */}
             {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12"> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mt-15 mx-auto px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mt-10 sm:mt-15 mx-auto">
                 {/* Projets réalisés */}
-                <div className="bg-action rounded-xl p-10 shadow-sm">
-                    <div className="flex items-center gap-4">
-                        <div className="flex justify-center items-center w-12 h-12 rounded-lg bg-primary text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="bg-action rounded-xl p-6 sm:p-10 shadow-sm">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                        <div className="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-primary text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
                                 <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
                                 <path d="M4 22h16"></path>
@@ -69,48 +69,48 @@ const Presentation: React.FC = () => {
                             </svg>
                         </div>
                         <div>
-                            <p className="text-2xl font-bold text-gray-800 m-0 leading-tight">+30</p>
-                            <p className="text-base text-gray-600 m-0 leading-tight">Projets réalisés</p>
+                            <p className="text-xl sm:text-2xl font-bold text-gray-800 m-0 leading-tight">+30</p>
+                            <p className="text-sm sm:text-base text-gray-600 m-0 leading-tight">Projets réalisés</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Ans d'expérience */}
-                <div className="bg-action rounded-xl p-10 shadow-sm">
-                    <div className="flex items-center gap-4">
-                        <div className="flex justify-center items-center w-12 h-12 rounded-lg bg-primary text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="bg-action rounded-xl p-6 sm:p-10 shadow-sm">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                        <div className="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-primary text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <polyline points="12 6 12 12 16 14"></polyline>
                             </svg>
                         </div>
                         <div>
-                            <p className="text-2xl font-bold text-gray-800 m-0 leading-tight">+2</p>
-                            <p className="text-base text-gray-600 m-0 leading-tight">Ans d&apos;expérience</p>
+                            <p className="text-xl sm:text-2xl font-bold text-gray-800 m-0 leading-tight">+2</p>
+                            <p className="text-sm sm:text-base text-gray-600 m-0 leading-tight">Ans d&apos;expérience</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Langages et outils */}
-                <div className="bg-action rounded-xl p-10 shadow-sm">
-                    <div className="flex items-center gap-4">
-                        <div className="flex justify-center items-center w-12 h-12 rounded-lg bg-primary text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="bg-action rounded-xl p-6 sm:p-10 shadow-sm">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                        <div className="flex justify-center items-center w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-primary text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
                             </svg>
                         </div>
                         <div>
-                            <p className="text-2xl font-bold text-gray-800 m-0 leading-tight">+30</p>
-                            <p className="text-base text-gray-600 m-0 leading-tight">Langages et outils maîtrisés</p>
+                            <p className="text-xl sm:text-2xl font-bold text-gray-800 m-0 leading-tight">+30</p>
+                            <p className="text-sm sm:text-base text-gray-600 m-0 leading-tight">Langages et outils maîtrisés</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Section liens sociaux */}
-            <div className="mt-10 flex justify-center">
+            <div className="mt-8 sm:mt-10 flex justify-center">
                 {/* Réseaux sociaux */}
-                <div className="bg-gray-50 rounded-lg p-8">
+                <div className="bg-gray-50 rounded-lg p-6 sm:p-8">
                     <div className="flex space-x-4">
                         {/* <a href="#" className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
