@@ -7,7 +7,7 @@ const Companys: React.FC = () => {
     const { companys } = fields;
 
     return (
-        <section id="experiences" className="w-full bg-[#FFFFF] py-16">
+        <section id="experiences" className="w-full bg-[#F7F9FF] py-16">
             {/* Titre de la section */}
             <h2 className="text-3xl font-bold text-center text-black mb-12">
                 {companys.title}

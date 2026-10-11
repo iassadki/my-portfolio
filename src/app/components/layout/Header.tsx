@@ -50,9 +50,9 @@ const Header = () => {
                 </nav>
 
                 <div className="hidden md:block">
-                    <Link href="#contact">
+                    <Link href="https://github.com/iassadki" target="_blank" rel="noopener noreferrer">
                         <ButtonPrimary className="!bg-primary !border-primary !text-white !px-7 !py-2.5 !text-[16px] !font-bold !shadow-none hover:!brightness-90">
-                            Me contacter
+                            Voir mon github
                         </ButtonPrimary>
                     </Link>
                 </div>
@@ -81,9 +81,9 @@ const Header = () => {
                         </Link>
                     ))}
                     <div className="pt-2">
-                        <Link href="#contact" onClick={() => setIsOpen(false)}>
+                        <Link href="https://github.com/iassadki" onClick={() => setIsOpen(false)}>
                             <ButtonPrimary className="!bg-primary !border-primary !text-white !px-6 !py-3 !text-base !font-bold hover:!brightness-90">
-                                Me contacter
+                                Voir mon github
                             </ButtonPrimary>
                         </Link>
                     </div>

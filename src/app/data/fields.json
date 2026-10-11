@@ -26,16 +26,16 @@
                 "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
             },
             {
-                "title": "Gestion de BDD",
-                "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
-            },
-            {
                 "title": "Developpement d'applications",
                 "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
             },
             {
                 "title": "Conception uml",
                 "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
+            },
+            {
+                "title": "Gestion de BDD",
+                "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
             },
             {
                 "title": "Gestion d'agents IA",
@@ -62,16 +62,16 @@
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                     },
                     {
+                        "title": "Vue",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                    },
+                    {
                         "title": "React",
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                     },
                     {
-                        "title": "Next.js",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                    },
-                    {
-                        "title": "TypeScript",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        "title": "Flutter",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
                     }
                 ]
             },
@@ -79,20 +79,28 @@
                 "category": "Back-end",
                 "skills": [
                     {
-                        "title": "Node.js",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                    },
-                    {
                         "title": "Python",
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                     },
                     {
-                        "title": "Java",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                        "title": "FastAPI",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
                     },
                     {
-                        "title": "PHP",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                        "title": "Django",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                    },
+                    {
+                        "title": "TypeScript",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    },
+                    {
+                        "title": "NodeJS",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    },
+                    {
+                        "title": "JAVA",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
                     }
                 ]
             },
@@ -108,8 +116,37 @@
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                     },
                     {
+                        "title": "SQLServer",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+                    },
+                    {
                         "title": "MongoDB",
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    }
+                ]
+            },
+            {
+                "category": "Cloud & DevOps",
+                "skills": [                
+                    {
+                        "title": "Azure",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                    },
+                    {
+                        "title": "Docker",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                    },
+                    {
+                        "title": "GitHub Actions",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+                    },
+                    {
+                        "title": "Jenkins",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+                    },
+                    {
+                        "title": "Ansible",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg"
                     }
                 ]
             },
@@ -117,17 +154,46 @@
                 "category": "Outils",
                 "skills": [
                     {
-                        "title": "Git",
+                        "title": "Apache",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+                    },
+                    {
+                        "title": "GIT",
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                     },
                     {
-                        "title": "Docker",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        "title": "Jira",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+                    },
+                    {
+                        "title": "Confluence",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg"
                     },
                     {
                         "title": "Figma",
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                    },
+                    {
+                        "title": "Wordpress",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                    },
+                    {
+                        "title": "Shell",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                    },
+                    {
+                        "title": "Claude Code",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/claude-color.svg"
+                    },
+                    {
+                        "title": "UML",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg"
+                    },
+                    {
+                        "title": "Swagger",
+                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg"
                     }
+
                 ]
             }
         ]
@@ -143,25 +209,18 @@
                 "link": "https://github.com/iassadki/intern-flow"
             },
             {
-                "title": "Planning Eplucheurs",
-                "category": "Application web",
-                "imagePath": "/images/projects/planning-eplucheurs.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/planning-eplucheurs"
-            },
-            {
-                "title": "Exotic cars",
-                "category": "Application web",
-                "imagePath": "/images/projects/exotic-cars.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/exotic-cars"
-            },
-            {
-                "title": "Nomad",
+                "title": "Nextrip",
                 "category": "Application mobile",
                 "imagePath": "/images/projects/nomad.png",
                 "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/nomad"
+                "link": "https://github.com/iassadki/nextrip"
+            },
+            {
+                "title": "Nextrip Website",
+                "category": "Application web",
+                "imagePath": "/images/projects/nomad.png",
+                "description": "Description du projet 1",
+                "link": "https://github.com/iassadki/nextrip"
             },
             {
                 "title": "Itunes Seeker",
@@ -176,13 +235,6 @@
                 "imagePath": "/images/projects/my-dream-garage.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/my-dream-garage"
-            },
-            {
-                "title": "Business Card Generator",
-                "category": "Application web",
-                "imagePath": "/images/projects/business-card-generator.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/business-card-generator"
             },
             {
                 "title": "Portal Asso",
@@ -218,13 +270,6 @@
                 "imagePath": "/images/projects/ia-logo.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/my-portfolio"
-            },
-            {
-                "title": "Studio 1601",
-                "category": "Application web",
-                "imagePath": "/images/projects/studio-1601.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/studio-1601"
             }
         ]
     },
