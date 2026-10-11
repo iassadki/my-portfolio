@@ -7,22 +7,22 @@ const Companys: React.FC = () => {
     const { companys } = fields;
 
     return (
-        <section id="experiences" className="w-full py-16 bg-white">
+        <section id="experiences" className="w-full bg-[#FFFFF] py-16">
             {/* Titre de la section */}
             <h2 className="text-3xl font-bold text-center text-black mb-12">
                 {companys.title}
             </h2>
 
             {/* Liste des entreprises, grille de 5 */}
-            <div className="max-w-7xl mx-auto px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            <div className="mx-auto max-w-7xl px-8">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
                     {companys.companysData.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white p-3 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                            className="overflow-hidden rounded-[24px] bg-[#F7F9FF] p-6 transition-shadow duration-300 hover:shadow-lg"
                         >
                             {/* Image de l'entreprise */}
-                            <div className="relative w-full h-48 bg-white-200">
+                            <div className="relative flex h-40 w-full items-center justify-center rounded-xl">
                                 
                                 <Image
                                     src={item.imagePath}

@@ -59,7 +59,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#projects" className="text-gray-100 hover:text-white transition-colors">
+                                <Link href="/projects" className="text-gray-100 hover:text-white transition-colors">
                                     Projets
                                 </Link>
                             </li>
@@ -69,8 +69,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/resume/CV_Ilias_ASSADKI.pdf"
-                                    target="_blank" className="text-gray-100 hover:text-white transition-colors">
+                                <Link href="/cv" className="text-gray-100 hover:text-white transition-colors">
                                     CV
                                 </Link>
                             </li>

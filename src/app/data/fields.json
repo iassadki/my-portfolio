@@ -18,33 +18,27 @@
         "title": "Mes domaines d'expertise",
         "expertiseData": [
             {
-                "title": "Développement web",
-                "imagePath": "/images/expertise/devicon-plain.svg",
+                "title": "Developpement frontend",
                 "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
             },
             {
-                "title": "UI/UX Design",
-                "imagePath": "/images/expertise/ux-ui-icon.svg",
+                "title": "Developpement backend",
                 "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
             },
             {
                 "title": "Gestion de BDD",
-                "imagePath": "/images/expertise/database-icon.svg",
                 "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
             },
             {
-                "title": "Développement d'applications",
-                "imagePath": "/images/expertise/mobile-icon.svg",
+                "title": "Developpement d'applications",
                 "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
             },
             {
-                "title": "Conception UML",
-                "imagePath": "/images/expertise/uml-icon.svg",
+                "title": "Conception uml",
                 "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
             },
             {
-                "title": "Webdesign",
-                "imagePath": "/images/expertise/webdesign-icon.svg",
+                "title": "Gestion d'agents IA",
                 "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
             }
         ]

@@ -5,9 +5,7 @@ import Hero from "../app/components/sections/Hero";
 import Presentation from "./components/sections/Presentation";
 import Expertise from "./components/sections/Expertise";
 import Skills from "./components/sections/Skills";
-import Projects from "./components/sections/Projects";
 import Companys from "./components/sections/Companys";
-import Resume from "./components/sections/Resume";
 import Footer from "../app/components/layout/Footer";
 
 import '../../src/app/globals.css';
@@ -20,9 +18,7 @@ export default function Home() {
       <Presentation />
       <Expertise />
       <Skills />
-      <Projects />
       <Companys />
-      <Resume />
       {/* <Contact /> */}
       <Footer />
     </div>

@@ -17,54 +17,48 @@ const Header = () => {
         { href: "#presentation", label: "Présentation", id: "presentation" },
         { href: "#expertise", label: "Expertise", id: "expertise" },
         { href: "#skills", label: "Compétences", id: "skills" },
-        { href: "#projects", label: "Projets", id: "projects" },
         { href: "#experiences", label: "Experiences", id: "experiences" },
-        { href: "#resume", label: "CV", id: "resume" },
+        { href: "/projects", label: "Projets", id: "projects" },
+        { href: "/cv", label: "CV", id: "resume" },
     ];
 
     return (
-        <header className="bg-white px-6 py-3 shadow-md fixed top-0 w-full z-50">
-            <div className="flex items-center justify-between">
-                {/* Logo */}
-                <Link href="/" className="text-xl font-bold text-primary hover:text-primary-600 transition-colors">
-                    {/* iassadki */}
+        <header className="fixed left-1/2 top-7 z-50 w-[calc(100%-48px)] -translate-x-1/2 max-w-[1400px]">
+            <div className="flex min-h-[82px] items-center justify-between rounded-full border-2 border-[#CBC1FF] bg-action px-8 py-3 shadow-[0_2px_0_rgba(78,68,104,0.08)]">
+                <Link href="/" className="flex items-center justify-center text-primary transition-opacity hover:opacity-90" aria-label="Accueil">
                     <Image
                         src="/images/header/ia-logo.png"
-                        alt="Logo Header"
-                        width={60}
-                        height={60}
-                        className="object-contain"
-                        unoptimized
+                        alt="Accueil"
+                        width={40}
+                        height={40}
+                        className="h-10 w-10 object-contain"
                     />
                 </Link>
 
-                {/* Desktop Nav */}
-                <nav className="hidden md:flex space-x-6 font-medium text-black">
+                <nav className="hidden items-center gap-12 md:flex">
                     {links.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
-                            className={`transition-colors hover:text-primary ${
-                                activeSection === link.id 
-                                    ? 'text-primary font-semibold' 
-                                    : 'text-black'
-                            }`}
+                            className={`text-[18px] font-medium transition-colors ${
+                                activeSection === link.id ? "text-primary" : "text-black/60"
+                            } hover:text-primary`}
                         >
                             {link.label}
                         </Link>
                     ))}
                 </nav>
 
-                {/* Contact Button (Desktop) */}
                 <div className="hidden md:block">
                     <Link href="#contact">
-                        <ButtonPrimary>Me contacter</ButtonPrimary>
+                        <ButtonPrimary className="!bg-primary !border-primary !text-white !px-7 !py-2.5 !text-[16px] !font-bold !shadow-none hover:!brightness-90">
+                            Me contacter
+                        </ButtonPrimary>
                     </Link>
                 </div>
 
-                {/* Burger Menu (Mobile) */}
                 <button
-                    className="md:hidden text-black"
+                    className="text-primary md:hidden"
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
                 >
@@ -72,26 +66,25 @@ const Header = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden mt-2 space-y-4 pb-4">
+                <div className="mt-3 space-y-3 rounded-3xl border-2 border-[#CBC1FF] bg-action p-4 md:hidden">
                     {links.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
                             onClick={() => setIsOpen(false)}
-                            className={`block text-lg px-2 py-1 hover:text-primary transition-colors ${
-                                activeSection === link.id 
-                                    ? 'text-primary font-semibold' 
-                                    : 'text-black'
+                            className={`block px-2 py-1 text-lg transition-colors ${
+                                activeSection === link.id ? "text-primary font-semibold" : "text-black/60"
                             }`}
                         >
                             {link.label}
                         </Link>
                     ))}
-                    <div className="mt-2">
+                    <div className="pt-2">
                         <Link href="#contact" onClick={() => setIsOpen(false)}>
-                            <ButtonPrimary>Me contacter</ButtonPrimary>
+                            <ButtonPrimary className="!bg-primary !border-primary !text-white !px-6 !py-3 !text-base !font-bold hover:!brightness-90">
+                                Me contacter
+                            </ButtonPrimary>
                         </Link>
                     </div>
                 </div>
