@@ -1,4 +1,7 @@
 {
+    "header": {
+        "imagePath": "/images/header/ia-logo.png"
+    },
     "hero": {
         "title": "Votre développeur",
         "title_primary": "de rêve",
@@ -211,14 +214,14 @@
             {
                 "title": "Nextrip",
                 "category": "Application mobile",
-                "imagePath": "/images/projects/nomad.png",
+                "imagePath": "/images/projects/nextrip-app.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/nextrip"
             },
             {
                 "title": "Nextrip Website",
                 "category": "Application web",
-                "imagePath": "/images/projects/nomad.png",
+                "imagePath": "/images/projects/nextrip-website.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/nextrip"
             },
@@ -228,13 +231,6 @@
                 "imagePath": "/images/projects/itunes-seeker.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/itunes-seeker"
-            },
-            {
-                "title": "My Dream Garage",
-                "category": "Application web",
-                "imagePath": "/images/projects/my-dream-garage.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/my-dream-garage"
             },
             {
                 "title": "Portal Asso",
@@ -267,7 +263,7 @@
             {
                 "title": "Portfolio Ilias",
                 "category": "Application web",
-                "imagePath": "/images/projects/ia-logo.png",
+                "imagePath": "/images/projects/portfolio-ilias.png",
                 "description": "Description du projet 1",
                 "link": "https://github.com/iassadki/my-portfolio"
             }

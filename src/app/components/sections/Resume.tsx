@@ -4,6 +4,7 @@ import ButtonPrimary from "@/app/components/ui/ButtonPrimary";
 
 const Resume: React.FC = () => {
     const { resume } = fields;
+    const resumePdf = "/resume/Ilias_ASSADKI_CV_.pdf";
 
     return (
         <section id="resume" className="w-full py-16 bg-gray-50">
@@ -15,11 +16,30 @@ const Resume: React.FC = () => {
                 <div className="bg-action rounded-lg p-10 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <h3 className="text-lg font-semibold text-primary mb-4">{resume.title}</h3>
                     <p className="text-gray-700">{resume.description}</p>
-                    <p className="text-gray-700">Aperçu de mon CV</p>
+                    {/* <p className="mt-4 text-gray-700">Aperçu de mon CV</p> */}
+                    <object
+                        data={resumePdf}
+                        type="application/pdf"
+                        aria-label="Aperçu du CV d'Ilias Assadki"
+                        className="mt-6 h-[70vh] min-h-[600px] w-full rounded-lg border border-gray-200 bg-white"
+                    >
+                        <p className="p-6 text-gray-700">
+                            L&apos;aperçu PDF n&apos;est pas disponible dans votre navigateur.{" "}
+                            <a
+                                href={resumePdf}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-semibold text-primary underline"
+                            >
+                                Ouvrir le CV
+                            </a>
+                        </p>
+                    </object>
                     <div className="mt-6">
                         <ButtonPrimary
-                            href="/resume/CV_Ilias_ASSADKI.pdf"
+                            href={resumePdf}
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="w-full block text-center"
                         >
                             Voir Aperçu

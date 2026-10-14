@@ -6,10 +6,12 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import { useActiveSection } from "../../hooks/useActiveSection";
+import fields from "@/app/data/fields.json";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const activeSection = useActiveSection();
+    const { header } = fields;
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -27,11 +29,12 @@ const Header = () => {
             <div className="flex min-h-[82px] items-center justify-between rounded-full border-2 border-[#CBC1FF] bg-action px-8 py-3 shadow-[0_2px_0_rgba(78,68,104,0.08)]">
                 <Link href="/" className="flex items-center justify-center text-primary transition-opacity hover:opacity-90" aria-label="Accueil">
                     <Image
-                        src="/images/header/ia-logo.png"
+                        src={header.imagePath}
                         alt="Accueil"
                         width={40}
                         height={40}
                         className="h-10 w-10 object-contain"
+                        priority
                     />
                 </Link>
 
