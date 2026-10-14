@@ -1,4 +1,4 @@
-import Header from "../components/layout/Header";
+import Header from "../components/layout/Header2";
 import Footer from "../components/layout/Footer";
 import Resume from "../components/sections/Resume";
 
