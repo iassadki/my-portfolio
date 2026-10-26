@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface ButtonPrimaryProps {
     children: React.ReactNode;
@@ -43,6 +44,20 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
     ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
     ${className}
   `;
+
+    // Liens internes (pages et ancres) : next/link gère le scroll vers l'ancre après navigation
+    if (href && (href.startsWith('/') || href.startsWith('#')) && target === '_self') {
+        return (
+            <Link
+                href={href}
+                onClick={onClick}
+                className={baseClasses}
+                id={id}
+            >
+                {children}
+            </Link>
+        );
+    }
 
     if (href) {
         return (

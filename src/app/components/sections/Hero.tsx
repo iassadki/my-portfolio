@@ -7,9 +7,9 @@ const Hero: React.FC = () => {
     const { hero, resume, contact } = fields;
 
     return (
-        <section id="hero" className="relative w-full pt-12">
+        <section id="hero" className="relative w-full">
             <div
-                className="relative flex min-h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4 pb-16 pt-28 text-center"
+                className="relative flex min-h-[712px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4 pb-16 pt-56 text-center"
                 style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(248, 247, 255, 0.88) 0%, rgba(203, 193, 255, 0.42) 58%, rgba(255, 255, 255, 0.9) 100%), url(${hero.imagePath})`,
                 }}
