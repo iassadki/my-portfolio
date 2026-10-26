@@ -20,7 +20,6 @@ const Header = () => {
         { href: "#expertise", label: "Services", id: "expertise" },
         { href: "#experiences", label: "Expériences", id: "experiences" },
         { href: "#skills", label: "Compétences", id: "skills" },
-        { href: "#contact", label: "Contact", id: "contact" },
         { href: "/cv", label: "CV", id: "resume" },
     ];
 

@@ -9,15 +9,15 @@ import Experience from "./components/sections/Experience";
 import Contact from "./components/sections/Contact";
 import Footer from "../app/components/layout/Footer";
 
-import '../../src/app/globals.css';
+// import '../../src/app/globals.css';
 
 export default function Home() {
   return (
     <div>
       <Header />
       <Hero />
-      <FeaturedProjects />
       <Presentation />
+      <FeaturedProjects />
       <Expertise />
       <Process />
       <Experience />
