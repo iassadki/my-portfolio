@@ -4,7 +4,7 @@ import ButtonPrimary from "@/app/components/ui/ButtonPrimary";
 
 const Resume: React.FC = () => {
     const { resume } = fields;
-    const resumePdf = "/resume/Ilias_ASSADKI_CV_.pdf";
+    const resumePdf = resume.cvLink;
 
     return (
         <section id="resume" className="w-full py-16 bg-gray-50">

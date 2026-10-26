@@ -4,7 +4,8 @@ import Presentation from "./components/sections/Presentation";
 import Expertise from "./components/sections/Expertise";
 import Skills from "./components/sections/Skills";
 import FeaturedProjects from "./components/sections/FeaturedProjects";
-import Companys from "./components/sections/Companys";
+import Process from "./components/sections/Process";
+import Experience from "./components/sections/Experience";
 import Contact from "./components/sections/Contact";
 import Footer from "../app/components/layout/Footer";
 
@@ -18,8 +19,9 @@ export default function Home() {
       <FeaturedProjects />
       <Presentation />
       <Expertise />
+      <Process />
+      <Experience />
       <Skills />
-      <Companys />
       <Contact />
       <Footer />
     </div>

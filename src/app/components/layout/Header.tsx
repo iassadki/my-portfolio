@@ -16,11 +16,10 @@ const Header = () => {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const links = [
-        { href: "#presentation", label: "Présentation", id: "presentation" },
-        { href: "#expertise", label: "Expertise", id: "expertise" },
-        { href: "#skills", label: "Compétences", id: "skills" },
         { href: "#projects", label: "Projets", id: "projects" },
+        { href: "#expertise", label: "Services", id: "expertise" },
         { href: "#experiences", label: "Expériences", id: "experiences" },
+        { href: "#skills", label: "Compétences", id: "skills" },
         { href: "/cv", label: "CV", id: "resume" },
         { href: "#contact", label: "Contact", id: "contact" },
     ];

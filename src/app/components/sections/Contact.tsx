@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
-import { Clock, Github, Linkedin, Loader2, Mail, MapPin, Phone, Send } from "lucide-react";
+import { BriefcaseBusiness, Clock, FileDown, Github, Linkedin, Loader2, Mail, MapPin, Phone, Send } from "lucide-react";
 import fields from '@/app/data/fields.json';
 import ButtonPrimary from "@/app/components/ui/ButtonPrimary";
 
@@ -18,7 +18,7 @@ const emptyForm: FormData = { name: '', email: '', subject: '', message: '', web
 const inputClasses = "w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-black transition-colors placeholder:text-gray-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary";
 
 const Contact: React.FC = () => {
-    const { contact } = fields;
+    const { contact, resume } = fields;
     const [formData, setFormData] = useState<FormData>(emptyForm);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -84,10 +84,10 @@ const Contact: React.FC = () => {
                                         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white text-primary">
                                             <Icon className="h-6 w-6" strokeWidth={1.8} aria-hidden="true" />
                                         </div>
-                                        <div>
+                                        <div className="min-w-0">
                                             <p className="font-medium text-black">{label}</p>
                                             {href ? (
-                                                <a href={href} className="text-gray-700 hover:text-primary hover:underline">{value}</a>
+                                                <a href={href} className="break-all text-gray-700 hover:text-primary hover:underline">{value}</a>
                                             ) : (
                                                 <p className="text-gray-700">{value}</p>
                                             )}
@@ -96,24 +96,43 @@ const Contact: React.FC = () => {
                                 ))}
                             </div>
 
-                            <div className="mt-8 flex gap-4 border-t border-primary/15 pt-6">
+                            <div className="mt-8 flex flex-wrap gap-3 border-t border-primary/15 pt-6">
                                 <a
-                                    href="https://www.linkedin.com/in/ilias-assadki/"
+                                    href={contact.linkedin}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    aria-label="LinkedIn"
-                                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white transition-transform hover:scale-105"
+                                    className="inline-flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-bold transition-transform hover:scale-105 bg-primary text-white"
                                 >
-                                    <Linkedin className="h-5 w-5" aria-hidden="true" />
+                                    <Linkedin className="h-4 w-4" aria-hidden="true" />
+                                    LinkedIn
+                                </a>
+                                {contact.malt && (
+                                    <a
+                                        href={contact.malt}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-bold transition-transform hover:scale-105 bg-primary text-white"
+                                    >
+                                        <BriefcaseBusiness className="h-4 w-4" aria-hidden="true" />
+                                        Malt
+                                    </a>
+                                )}
+                                <a
+                                    href={contact.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-bold transition-transform hover:scale-105 bg-white text-primary"
+                                >
+                                    <Github className="h-4 w-4" aria-hidden="true" />
+                                    GitHub
                                 </a>
                                 <a
-                                    href="https://github.com/iassadki"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="GitHub"
-                                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white transition-transform hover:scale-105"
+                                    href={resume.cvLink}
+                                    download
+                                    className="inline-flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-bold transition-transform hover:scale-105 bg-white text-primary"
                                 >
-                                    <Github className="h-5 w-5" aria-hidden="true" />
+                                    <FileDown className="h-4 w-4" aria-hidden="true" />
+                                    CV (PDF)
                                 </a>
                             </div>
                         </div>

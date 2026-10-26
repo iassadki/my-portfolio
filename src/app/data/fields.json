@@ -25,34 +25,161 @@
         "imagePath": "/images/presentation/ilias-round.png",
         "name": "Ilias",
         "surname": "Assadki",
-        "description": "Développeur Web et Logiciel"
+        "description": "Développeur Web et Logiciel",
+        "stats": [
+            {
+                "value": "+4",
+                "label": "Ans d’expérience"
+            },
+            {
+                "value": "+30",
+                "label": "Projets réalisés"
+            },
+            {
+                "value": "5",
+                "label": "Structures accompagnées, de l’administration à la startup"
+            }
+        ]
     },
     "expertise": {
-        "title": "Mes domaines d'expertise",
+        "title": "Ce que je peux faire pour vous",
         "expertiseData": [
             {
-                "title": "Developpement frontend",
-                "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
+                "icon": "server",
+                "title": "APIs & backend Python",
+                "description": "Conception d’APIs REST fiables et documentées, de la modélisation de la base de données jusqu’au déploiement.",
+                "tags": [
+                    "Python",
+                    "FastAPI",
+                    "Django",
+                    "PostgreSQL"
+                ]
             },
             {
-                "title": "Developpement backend",
-                "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
+                "icon": "bot",
+                "title": "Agents IA & automatisation",
+                "description": "Agents IA et scripts qui suppriment les tâches répétitives et connectent vos outils entre eux.",
+                "tags": [
+                    "Python",
+                    "LLM",
+                    "Bash",
+                    "API REST"
+                ]
             },
             {
-                "title": "Developpement d'applications",
-                "description": "Création d'une plateforme e-commerce moderne et intuitive pour une expérience utilisateur optimale."
+                "icon": "layers",
+                "title": "Applications web & mobile full-stack",
+                "description": "Des applications complètes, de l’interface au backend, avec CI/CD et environnements séparés.",
+                "tags": [
+                    "React",
+                    "Vue",
+                    "Next.js",
+                    "Flutter"
+                ]
+            }
+        ]
+    },
+    "process": {
+        "title": "Comment je travaille",
+        "steps": [
+            {
+                "title": "Appel découverte",
+                "description": "30 minutes pour comprendre votre besoin, vos contraintes et vos délais."
             },
             {
-                "title": "Conception uml",
-                "description": "Développement d'un site portfolio pour mettre en valeur les œuvres d'un artiste talentueux."
+                "title": "Proposition & devis",
+                "description": "Un périmètre clair, un planning et un chiffrage détaillé, sans surprise."
             },
             {
-                "title": "Gestion de BDD",
-                "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
+                "title": "Développement en sprints",
+                "description": "Des livraisons régulières et des points courts pour valider chaque étape avec vous."
             },
             {
-                "title": "Gestion d'agents IA",
-                "description": "Conception d'un site professionnel pour renforcer la présence en ligne d'une entreprise."
+                "title": "Livraison & maintenance",
+                "description": "Mise en production, documentation et suivi après livraison."
+            }
+        ]
+    },
+    "experiences": {
+        "title": "Expériences",
+        "experiencesData": [
+            {
+                "role": "Co-fondateur & Développeur Full-Stack",
+                "company": "Nextrip",
+                "period": "09/2025 – aujourd’hui",
+                "location": "Projet entrepreneurial",
+                "logo": "",
+                "link": "https://nextrip-app.com",
+                "highlights": [
+                    "5 fonctionnalités cœur développées en Flutter avec une architecture en couches",
+                    "Base PostgreSQL/Supabase de 8 tables, 3 environnements isolés (dev, staging, prod)",
+                    "Pipeline CI/CD GitHub Actions avec tests automatisés avant chaque déploiement"
+                ],
+                "stack": [
+                    "Flutter",
+                    "Dart",
+                    "Supabase",
+                    "Python",
+                    "PostgreSQL",
+                    "GitHub Actions"
+                ]
+            },
+            {
+                "role": "Concepteur Analyste MOE — Projet Pilier 2",
+                "company": "DGFIP",
+                "period": "09/2024 – 09/2026",
+                "location": "Val-de-Fontenay",
+                "logo": "/images/companies/dgfip.png",
+                "link": "",
+                "highlights": [
+                    "Outil de visualisation de requêtes SQL pour la MOA, utilisé par 10 personnes",
+                    "Requêtes SQL complexes en production pour les statistiques du projet, sur des milliers de lignes",
+                    "Scripts Shell de correction permettant de débloquer la recette sans attendre une nouvelle livraison"
+                ],
+                "stack": [
+                    "Java",
+                    "PostgreSQL",
+                    "SQL",
+                    "Bash",
+                    "Jenkins",
+                    "Ansible"
+                ]
+            },
+            {
+                "role": "Développeur Web",
+                "company": "All In Appli",
+                "period": "09/2022 – 09/2024",
+                "location": "Paris",
+                "logo": "/images/companies/all-in-appli.png",
+                "link": "",
+                "highlights": [
+                    "API d’authentification WordPress : connexion en 1 clic au lieu de 4 étapes, pour 40 utilisateurs",
+                    "Scripts Bash d’automatisation : environ 30 min gagnées par jour pour l’équipe",
+                    "Extensions WordPress sur mesure déployées sur 10 instances clients"
+                ],
+                "stack": [
+                    "PHP",
+                    "VueJS",
+                    "JavaScript",
+                    "SQL",
+                    "Bash",
+                    "WordPress"
+                ]
+            }
+        ],
+        "othersTitle": "Ils m’ont aussi fait confiance",
+        "others": [
+            {
+                "name": "Euro Services",
+                "imagePath": "/images/companies/euro-services.png"
+            },
+            {
+                "name": "Mairie d'Asnières",
+                "imagePath": "/images/companies/mairie-asnieres.png"
+            },
+            {
+                "name": "SMC",
+                "imagePath": "/images/companies/smc.png"
             }
         ]
     },
@@ -60,31 +187,61 @@
         "title": "Mes compétences",
         "skillsCategories": [
             {
-                "category": "Front-end",
+                "category": "Cœur de métier",
+                "featured": true,
                 "skills": [
                     {
-                        "title": "HTML",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        "title": "Python",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/python/python-original.svg"
                     },
                     {
-                        "title": "CSS",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        "title": "FastAPI",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/fastapi/fastapi-original.svg"
+                    },
+                    {
+                        "title": "Django",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/django/django-plain.svg"
+                    },
+                    {
+                        "title": "PostgreSQL",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/postgresql/postgresql-original.svg"
+                    }
+                ]
+            },
+            {
+                "category": "Front-end & mobile",
+                "skills": [
+                    {
+                        "title": "TypeScript",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/typescript/typescript-original.svg"
                     },
                     {
                         "title": "JavaScript",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    },
-                    {
-                        "title": "Vue",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/javascript/javascript-original.svg"
                     },
                     {
                         "title": "React",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/react/react-original.svg"
+                    },
+                    {
+                        "title": "Next.js",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/nextjs/nextjs-original.svg"
+                    },
+                    {
+                        "title": "Vue",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/vuejs/vuejs-original.svg"
                     },
                     {
                         "title": "Flutter",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/flutter/flutter-original.svg"
+                    },
+                    {
+                        "title": "HTML",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/html5/html5-original.svg"
+                    },
+                    {
+                        "title": "CSS",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/css3/css3-original.svg"
                     }
                 ]
             },
@@ -92,28 +249,16 @@
                 "category": "Back-end",
                 "skills": [
                     {
-                        "title": "Python",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        "title": "Node.js",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/nodejs/nodejs-original.svg"
                     },
                     {
-                        "title": "FastAPI",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                        "title": "Java",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/java/java-original.svg"
                     },
                     {
-                        "title": "Django",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                    },
-                    {
-                        "title": "TypeScript",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                    },
-                    {
-                        "title": "NodeJS",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                    },
-                    {
-                        "title": "JAVA",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                        "title": "Swagger",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/swagger/swagger-original.svg"
                     }
                 ]
             },
@@ -122,19 +267,19 @@
                 "skills": [
                     {
                         "title": "MySQL",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/mysql/mysql-original.svg"
                     },
                     {
-                        "title": "PostgreSQL",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                    },
-                    {
-                        "title": "SQLServer",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+                        "title": "SQL Server",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
                     },
                     {
                         "title": "MongoDB",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/mongodb/mongodb-original.svg"
+                    },
+                    {
+                        "title": "Supabase",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/supabase/supabase-original.svg"
                     }
                 ]
             },
@@ -142,24 +287,24 @@
                 "category": "Cloud & DevOps",
                 "skills": [
                     {
-                        "title": "Azure",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
-                    },
-                    {
                         "title": "Docker",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/docker/docker-original.svg"
                     },
                     {
                         "title": "GitHub Actions",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/githubactions/githubactions-original.svg"
+                    },
+                    {
+                        "title": "Azure",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/azure/azure-original.svg"
                     },
                     {
                         "title": "Jenkins",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/jenkins/jenkins-original.svg"
                     },
                     {
                         "title": "Ansible",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/ansible/ansible-original.svg"
                     }
                 ]
             },
@@ -167,44 +312,40 @@
                 "category": "Outils",
                 "skills": [
                     {
-                        "title": "Apache",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
-                    },
-                    {
-                        "title": "GIT",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                    },
-                    {
-                        "title": "Jira",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
-                    },
-                    {
-                        "title": "Confluence",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg"
-                    },
-                    {
-                        "title": "Figma",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                    },
-                    {
-                        "title": "Wordpress",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                        "title": "Git",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/git/git-original.svg"
                     },
                     {
                         "title": "Shell",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/bash/bash-original.svg"
                     },
                     {
                         "title": "Claude Code",
-                        "imagePath": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/claude-color.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.101.0/icons/claude-color.svg"
+                    },
+                    {
+                        "title": "Jira",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/jira/jira-original.svg"
+                    },
+                    {
+                        "title": "Confluence",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/confluence/confluence-original.svg"
+                    },
+                    {
+                        "title": "Figma",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/figma/figma-original.svg"
                     },
                     {
                         "title": "UML",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg"
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg"
                     },
                     {
-                        "title": "Swagger",
-                        "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg"
+                        "title": "WordPress",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/wordpress/wordpress-original.svg"
+                    },
+                    {
+                        "title": "Apache",
+                        "imagePath": "https://cdn.jsdelivr.net/npm/devicon@2.18.0/icons/apache/apache-original.svg"
                     }
                 ]
             }
@@ -245,7 +386,13 @@
                 "category": "Application mobile",
                 "imagePath": "/images/projects/nextrip-app.png",
                 "description": "Application mobile compagnon de voyage.",
-                "stack": [],
+                "stack": [
+                    "Flutter",
+                    "Dart",
+                    "Supabase",
+                    "Python",
+                    "PostgreSQL"
+                ],
                 "github": "https://github.com/iassadki/nextrip",
                 "demo": "https://nextrip-app.com",
                 "featured": true
@@ -330,35 +477,10 @@
         ],
         "featuredTitle": "Projets phares"
     },
-    "companys": {
-        "title": "Entreprises avec lesquelles j'ai travaillé",
-        "companysData": [
-            {
-                "name": "Euro Services",
-                "imagePath": "/images/companys/euro-services.png"
-            },
-            {
-                "name": "Mairie d'Asnières",
-                "imagePath": "/images/companys/mairie-asnieres.png"
-            },
-            {
-                "name": "All In Appli",
-                "imagePath": "/images/companys/all-in-appli.png"
-            },
-            {
-                "name": "SMC",
-                "imagePath": "/images/companys/smc.png"
-            },
-            {
-                "name": "DGFIP",
-                "imagePath": "/images/companys/dgfip.png"
-            }
-        ]
-    },
     "resume": {
         "title": "Mon CV",
         "preview": "Aperçu",
-        "cvLink": "/cv.pdf",
+        "cvLink": "/resume/Ilias_ASSADKI_CV_.pdf",
         "description": "Mon CV est disponible et téléchargeable. N'hésitez pas à le consulter pour en savoir plus sur mon parcours et mes compétences en développement web."
     },
     "contact": {
@@ -385,6 +507,9 @@
             "submit": "Envoyer",
             "successMessage": "Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.",
             "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
-        }
+        },
+        "malt": "",
+        "linkedin": "https://www.linkedin.com/in/ilias-assadki/",
+        "github": "https://github.com/iassadki"
     }
 }

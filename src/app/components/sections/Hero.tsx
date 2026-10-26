@@ -1,10 +1,10 @@
-import { MapPin } from "lucide-react";
+import { BriefcaseBusiness, FileDown, Linkedin, MapPin } from "lucide-react";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import ButtonSecondary from "../ui/ButtonSecondary";
 import fields from '@/app/data/fields.json';
 
 const Hero: React.FC = () => {
-    const { hero } = fields;
+    const { hero, resume, contact } = fields;
 
     return (
         <section id="hero" className="relative w-full pt-12">
@@ -57,10 +57,26 @@ const Hero: React.FC = () => {
                     <ButtonSecondary href="#projects">Voir mes projets</ButtonSecondary>
                 </div>
 
-                <p className="mt-6 inline-flex items-center gap-1.5 text-sm text-black/60">
-                    <MapPin className="h-4 w-4" aria-hidden="true" />
-                    {hero.location}
-                </p>
+                <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-semibold">
+                    <a href={resume.cvLink} download className="inline-flex items-center gap-1.5 text-primary hover:underline">
+                        <FileDown className="h-4 w-4" aria-hidden="true" />
+                        Télécharger mon CV
+                    </a>
+                    <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-primary hover:underline">
+                        <Linkedin className="h-4 w-4" aria-hidden="true" />
+                        LinkedIn
+                    </a>
+                    {contact.malt && (
+                        <a href={contact.malt} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-primary hover:underline">
+                            <BriefcaseBusiness className="h-4 w-4" aria-hidden="true" />
+                            Malt
+                        </a>
+                    )}
+                    <span className="inline-flex items-center gap-1.5 font-normal text-black/60">
+                        <MapPin className="h-4 w-4" aria-hidden="true" />
+                        {hero.location}
+                    </span>
+                </div>
             </div>
         </section>
     );
