@@ -14,7 +14,7 @@ const Footer = () => {
                             <span className="ml-2 text-lg">Ilias Assadki</span>
                         </div>
                         <p className="text-gray-100 mb-4 max-w-md">
-                            Développeur NextJS/NodeJS passionné par la création d&apos;applications web modernes et performantes.
+                            Développeur Python &amp; Full-Stack basé à Paris. Disponible en freelance et ouvert aux CDI.
                         </p>
                         <div className="flex space-x-4">
                             {/* Réseaux sociaux */}
@@ -54,7 +54,7 @@ const Footer = () => {
                         <h3 className="text-lg font-semibold mb-4">Navigation</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="#about" className="text-gray-100 hover:text-white transition-colors">
+                                <Link href="/#presentation" className="text-gray-100 hover:text-white transition-colors">
                                     À propos
                                 </Link>
                             </li>
@@ -64,7 +64,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#contact" className="text-gray-100 hover:text-white transition-colors">
+                                <Link href="/#contact" className="text-gray-100 hover:text-white transition-colors">
                                     Contact
                                 </Link>
                             </li>
@@ -81,22 +81,19 @@ const Footer = () => {
                         <h3 className="text-lg font-semibold mb-4">Services</h3>
                         <ul className="space-y-2">
                             <li>
-                                <span className="text-gray-100">Développement Web</span>
+                                <span className="text-gray-100">APIs &amp; backend Python</span>
                             </li>
                             <li>
-                                <span className="text-gray-100">UI/UX Design</span>
+                                <span className="text-gray-100">Agents IA &amp; automatisation</span>
                             </li>
                             <li>
-                                <span className="text-gray-100">Gestion de BDD</span>
+                                <span className="text-gray-100">Applications web full-stack</span>
                             </li>
                             <li>
-                                <span className="text-gray-100">Développement d&apos;applications mobiles</span>
+                                <span className="text-gray-100">Bases de données</span>
                             </li>
                             <li>
-                                <span className="text-gray-100">Web Design</span>
-                            </li>
-                            <li>
-                                <span className="text-gray-100">Consulting</span>
+                                <span className="text-gray-100">Applications mobiles</span>
                             </li>
                         </ul>
                     </div>

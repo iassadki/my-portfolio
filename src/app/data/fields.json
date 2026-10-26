@@ -3,12 +3,22 @@
         "imagePath": "/images/header/ia-logo.png"
     },
     "hero": {
-        "title": "Votre développeur",
-        "title_primary": "de rêve",
+        "availability": "Disponible en freelance · Ouvert aux CDI",
+        "name": "Ilias Assadki",
+        "title": "Développeur",
+        "title_primary": "Python",
+        "title_suffix": "& Full-Stack",
         "imagePath": "/images/hero/gradient.png",
-        "name": "Gradient",
-        "description": "Je contribue a créer des applications performantes et",
-        "description_primary": "intuitives"
+        "description": "Je conçois des APIs robustes, des agents IA et des applications web complètes, du backend Python jusqu'à l'interface.",
+        "stack": [
+            "Python",
+            "FastAPI",
+            "Django",
+            "Agents IA",
+            "React",
+            "Next.js"
+        ],
+        "location": "Basé à Paris"
     },
     "presentation": {
         "title": "Présentation",
@@ -130,7 +140,7 @@
             },
             {
                 "category": "Cloud & DevOps",
-                "skills": [                
+                "skills": [
                     {
                         "title": "Azure",
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
@@ -196,7 +206,6 @@
                         "title": "Swagger",
                         "imagePath": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg"
                     }
-
                 ]
             }
         ]
@@ -205,69 +214,121 @@
         "title": "Mes projets",
         "projectsData": [
             {
+                "title": "TeamBrains",
+                "category": "Application web",
+                "imagePath": "/images/projects/team-brains.png",
+                "description": "Plateforme de mise en relation entre étudiants et entrepreneurs.",
+                "stack": [
+                    "Python",
+                    "JavaScript",
+                    "Docker"
+                ],
+                "github": "https://github.com/iassadki/TeamBrains",
+                "demo": "",
+                "featured": true
+            },
+            {
                 "title": "Intern Flow",
                 "category": "Application web",
                 "imagePath": "/images/projects/intern-flow.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/intern-flow"
+                "description": "Plateforme qui permet aux étudiants de rédiger leurs rapports de stage quotidiens.",
+                "stack": [
+                    "TypeScript",
+                    "JavaScript"
+                ],
+                "github": "https://github.com/iassadki/intern-flow",
+                "demo": "",
+                "featured": true
             },
             {
                 "title": "Nextrip",
                 "category": "Application mobile",
                 "imagePath": "/images/projects/nextrip-app.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/nextrip"
+                "description": "Application mobile compagnon de voyage.",
+                "stack": [],
+                "github": "https://github.com/iassadki/nextrip",
+                "demo": "https://nextrip-app.com",
+                "featured": true
             },
             {
                 "title": "Nextrip Website",
                 "category": "Application web",
                 "imagePath": "/images/projects/nextrip-website.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/nextrip"
-            },
-            {
-                "title": "Itunes Seeker",
-                "category": "Application mobile",
-                "imagePath": "/images/projects/itunes-seeker.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/itunes-seeker"
-            },
-            {
-                "title": "Portal Asso",
-                "category": "Application web",
-                "imagePath": "/images/projects/portal-asso.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/portal-asso"
+                "description": "Site vitrine de l’application Nextrip.",
+                "stack": [],
+                "github": "https://github.com/iassadki/nextrip",
+                "demo": "https://nextrip-app.com",
+                "featured": false
             },
             {
                 "title": "Wheelchair IOT Radar",
                 "category": "Application mobile",
                 "imagePath": "/images/projects/wheelchair-radar.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/wheelchair-radar"
+                "description": "Fauteuil roulant connecté : détection d’obstacles par IoT et clignotants connectés pour plus de sécurité.",
+                "stack": [
+                    "JavaScript",
+                    "IoT"
+                ],
+                "github": "https://github.com/iassadki/wheelchair-radar",
+                "demo": "",
+                "featured": false
             },
             {
                 "title": "School System",
                 "category": "Application web",
                 "imagePath": "/images/projects/school-system.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/school-system"
+                "description": "Application de gestion des opérations d’un établissement scolaire.",
+                "stack": [
+                    "PHP",
+                    "JavaScript",
+                    "Docker"
+                ],
+                "github": "https://github.com/iassadki/school-system",
+                "demo": "",
+                "featured": false
             },
             {
-                "title": "TeamBrains",
+                "title": "Portal Asso",
                 "category": "Application web",
-                "imagePath": "/images/projects/team-brains.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/TeamBrains"
+                "imagePath": "/images/projects/portal-asso.png",
+                "description": "Template de site pour associations.",
+                "stack": [
+                    "PHP",
+                    "Twig"
+                ],
+                "github": "https://github.com/iassadki/portal-asso",
+                "demo": "",
+                "featured": false
+            },
+            {
+                "title": "Itunes Seeker",
+                "category": "Application mobile",
+                "imagePath": "/images/projects/itunes-seeker.png",
+                "description": "Recherche de musiques et d’albums via l’API iTunes, avec gestion des titres favoris.",
+                "stack": [
+                    "JavaScript",
+                    "API iTunes"
+                ],
+                "github": "https://github.com/iassadki/itunes-seeker",
+                "demo": "",
+                "featured": false
             },
             {
                 "title": "Portfolio Ilias",
                 "category": "Application web",
                 "imagePath": "/images/projects/portfolio-ilias.png",
-                "description": "Description du projet 1",
-                "link": "https://github.com/iassadki/my-portfolio"
+                "description": "Ce portfolio, développé avec Next.js.",
+                "stack": [
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS"
+                ],
+                "github": "https://github.com/iassadki/my-portfolio",
+                "demo": "https://iassadki.com",
+                "featured": false
             }
-        ]
+        ],
+        "featuredTitle": "Projets phares"
     },
     "companys": {
         "title": "Entreprises avec lesquelles j'ai travaillé",
@@ -303,7 +364,7 @@
     "contact": {
         "title": "Contactez-moi",
         "placeHolder": "Entrons en contact",
-        "description": "Si vous avez un projet en tête ou si vous souhaitez discuter de vos besoins en développement web, n'hésitez pas à me contacter. Je suis là pour vous aider à concrétiser vos idées et à créer des solutions sur mesure.",
+        "description": "Une mission freelance en Python ou full-stack, ou un poste en CDI ? Décrivez-moi votre besoin, je vous réponds sous 24 h.",
         "placeHolderEmail": "Email",
         "email": "ilias.assadki@gmail.com",
         "placeHolderPhone": "Téléphone",
@@ -311,7 +372,7 @@
         "placeHolderLocation": "Localisation",
         "location": "Paris, France",
         "placeHolderAvailablity": "Disponibilités",
-        "availablity": "Lun - Ven, 9h - 18h",
+        "availablity": "Freelance et CDI",
         "form": {
             "name": "Nom",
             "namePlaceholder": "Votre nom complet",

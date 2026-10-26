@@ -19,9 +19,10 @@ const Header = () => {
         { href: "#presentation", label: "Présentation", id: "presentation" },
         { href: "#expertise", label: "Expertise", id: "expertise" },
         { href: "#skills", label: "Compétences", id: "skills" },
-        { href: "#experiences", label: "Experiences", id: "experiences" },
-        { href: "/projects", label: "Projets", id: "projects" },
+        { href: "#projects", label: "Projets", id: "projects" },
+        { href: "#experiences", label: "Expériences", id: "experiences" },
         { href: "/cv", label: "CV", id: "resume" },
+        { href: "#contact", label: "Contact", id: "contact" },
     ];
 
     return (
@@ -39,12 +40,12 @@ const Header = () => {
                     />
                 </Link>
 
-                <nav className="hidden items-center gap-12 md:flex">
+                <nav className="hidden items-center gap-6 lg:flex xl:gap-10">
                     {links.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
-                            className={`text-[18px] font-medium transition-colors ${
+                            className={`whitespace-nowrap text-[16px] font-medium xl:text-[18px] transition-colors ${
                                 activeSection === link.id ? "text-primary" : "text-black/60"
                             } hover:text-primary`}
                         >
@@ -53,16 +54,14 @@ const Header = () => {
                     ))}
                 </nav>
 
-                <div className="hidden md:block">
-                    <Link href="https://github.com/iassadki" target="_blank" rel="noopener noreferrer">
-                        <ButtonPrimary className="!bg-primary !border-primary !text-white !px-7 !py-2.5 !text-[16px] !font-bold !shadow-none hover:!brightness-90">
-                            Voir mon github
-                        </ButtonPrimary>
-                    </Link>
+                <div className="hidden lg:block">
+                    <ButtonPrimary href="#contact" className="whitespace-nowrap !bg-primary !border-primary !text-white !px-7 !py-2.5 !text-[16px] !font-bold !shadow-none hover:!brightness-90">
+                        Me contacter
+                    </ButtonPrimary>
                 </div>
 
                 <button
-                    className="text-primary md:hidden"
+                    className="text-primary lg:hidden"
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
                 >
@@ -71,7 +70,7 @@ const Header = () => {
             </div>
 
             {isOpen && (
-                <div className="mt-3 space-y-3 rounded-3xl border-2 border-[#CBC1FF] bg-action p-4 md:hidden">
+                <div className="mt-3 space-y-3 rounded-3xl border-2 border-[#CBC1FF] bg-action p-4 lg:hidden">
                     {links.map((link) => (
                         <Link
                             key={link.href}
@@ -85,11 +84,9 @@ const Header = () => {
                         </Link>
                     ))}
                     <div className="pt-2">
-                        <Link href="https://github.com/iassadki" onClick={() => setIsOpen(false)}>
-                            <ButtonPrimary className="!bg-primary !border-primary !text-white !px-6 !py-3 !text-base !font-bold hover:!brightness-90">
-                                Voir mon github
-                            </ButtonPrimary>
-                        </Link>
+                        <ButtonPrimary href="#contact" onClick={() => setIsOpen(false)} className="!bg-primary !border-primary !text-white !px-6 !py-3 !text-base !font-bold hover:!brightness-90">
+                            Me contacter
+                        </ButtonPrimary>
                     </div>
                 </div>
             )}

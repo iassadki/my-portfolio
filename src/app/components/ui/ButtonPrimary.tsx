@@ -50,6 +50,7 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
                 href={href}
                 target={target}
                 rel={rel}
+                onClick={onClick}
                 className={baseClasses}
                 id={id}
             >

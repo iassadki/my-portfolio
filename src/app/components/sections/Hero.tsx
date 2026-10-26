@@ -1,35 +1,66 @@
+import { MapPin } from "lucide-react";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import ButtonSecondary from "../ui/ButtonSecondary";
 import fields from '@/app/data/fields.json';
 
-const Hero: React.FC = () => { 
+const Hero: React.FC = () => {
     const { hero } = fields;
 
     return (
         <section id="hero" className="relative w-full pt-12">
             <div
-                className="relative flex h-[600px] w-full flex-col items-center bg-cover bg-center bg-no-repeat px-4 pt-40 text-center"
+                className="relative flex min-h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4 pb-16 pt-28 text-center"
                 style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(248, 247, 255, 0.88) 0%, rgba(203, 193, 255, 0.42) 58%, rgba(255, 255, 255, 0.9) 100%), url(${hero.imagePath})`,
                 }}
             >
-                <h1 className="relative z-10 font-jakarta text-4xl font-bold leading-[1.1] text-black sm:text-[52px]">
-                    {hero.title}
+                {/* Disponibilité */}
+                <a
+                    href="#contact"
+                    className="mb-8 inline-flex items-center gap-2 rounded-full border border-green-300 bg-white/80 px-4 py-1.5 text-sm font-semibold text-green-800 shadow-sm transition-colors hover:bg-white"
+                >
+                    <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
+                        <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
+                    </span>
+                    {hero.availability}
+                </a>
+
+                <p className="font-jakarta text-lg font-semibold text-black/70 sm:text-xl">
+                    {hero.name}
+                </p>
+
+                <h1 className="mt-2 max-w-4xl font-jakarta text-4xl font-bold leading-[1.1] text-black sm:text-[56px]">
+                    {hero.title}{" "}
+                    <span className="text-primary underline decoration-4 underline-offset-8">{hero.title_primary}</span>
+                    <br className="hidden sm:block" />{" "}
+                    {hero.title_suffix}
                 </h1>
 
-                <h1 className="relative z-10 font-jakarta text-4xl font-bold leading-[1.1] text-primary underline sm:text-[52px]">
-                    {hero.title_primary}
-                </h1>
+                <p className="mt-8 max-w-2xl font-jakarta text-base font-medium text-black/80 sm:text-xl">
+                    {hero.description}
+                </p>
 
-                <h4 className="relative z-10 mt-10 font-jakarta text-base font-medium text-black sm:text-[24px]">
-                    {hero.description}{" "}
-                    <span className="text-primary underline">{hero.description_primary}</span>
-                </h4>
+                <ul className="mt-6 flex max-w-2xl flex-wrap justify-center gap-2" aria-label="Technologies principales">
+                    {hero.stack.map((tech) => (
+                        <li
+                            key={tech}
+                            className="rounded-full border border-primary/20 bg-white/80 px-3 py-1 text-sm font-semibold text-primary"
+                        >
+                            {tech}
+                        </li>
+                    ))}
+                </ul>
 
-                <div className="relative z-10 mt-14 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row sm:gap-4">
-                    <ButtonPrimary href="/projects">Voir mes projets</ButtonPrimary>
-                    <ButtonSecondary href="#contact">Me contacter</ButtonSecondary>
+                <div className="mt-10 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row sm:gap-4">
+                    <ButtonPrimary href="#contact">Me contacter</ButtonPrimary>
+                    <ButtonSecondary href="#projects">Voir mes projets</ButtonSecondary>
                 </div>
+
+                <p className="mt-6 inline-flex items-center gap-1.5 text-sm text-black/60">
+                    <MapPin className="h-4 w-4" aria-hidden="true" />
+                    {hero.location}
+                </p>
             </div>
         </section>
     );

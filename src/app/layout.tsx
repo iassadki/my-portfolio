@@ -13,8 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio of Ilias Assadki",
-  description: "Personal Portfolio of Ilias Assadki, software and web developer.",
+  metadataBase: new URL("https://iassadki.com"),
+  title: "Ilias Assadki — Développeur Python & Full-Stack freelance à Paris",
+  description:
+    "Ilias Assadki, développeur Python et full-stack basé à Paris : APIs FastAPI et Django, agents IA, applications web React et Next.js. Disponible en freelance et ouvert aux CDI.",
+  openGraph: {
+    title: "Ilias Assadki — Développeur Python & Full-Stack",
+    description:
+      "APIs Python, agents IA et applications web complètes. Disponible en freelance et ouvert aux CDI.",
+    url: "https://iassadki.com",
+    siteName: "Ilias Assadki",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

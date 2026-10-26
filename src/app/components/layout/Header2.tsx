@@ -21,6 +21,7 @@ const Header = () => {
         { href: "/", label: "Accueil", id: "presentation" },
         { href: "/projects", label: "Projets", id: "projects" },
         { href: "/cv", label: "CV", id: "resume" },
+        { href: "/#contact", label: "Contact", id: "contact" },
     ];
     const currentSection =
         pathname === "/projects"
@@ -59,11 +60,9 @@ const Header = () => {
                 </nav>
 
                 <div className="hidden md:block">
-                    <Link href="https://github.com/iassadki" target="_blank" rel="noopener noreferrer">
-                        <ButtonPrimary className="!bg-primary !border-primary !text-white !px-7 !py-2.5 !text-[16px] !font-bold !shadow-none hover:!brightness-90">
-                            Voir mon github
-                        </ButtonPrimary>
-                    </Link>
+                    <ButtonPrimary href="/#contact" className="!bg-primary !border-primary !text-white !px-7 !py-2.5 !text-[16px] !font-bold !shadow-none hover:!brightness-90">
+                        Me contacter
+                    </ButtonPrimary>
                 </div>
 
                 <button
@@ -90,11 +89,9 @@ const Header = () => {
                         </Link>
                     ))}
                     <div className="pt-2">
-                        <Link href="https://github.com/iassadki" onClick={() => setIsOpen(false)}>
-                            <ButtonPrimary className="!bg-primary !border-primary !text-white !px-6 !py-3 !text-base !font-bold hover:!brightness-90">
-                                Voir mon github
-                            </ButtonPrimary>
-                        </Link>
+                        <ButtonPrimary href="/#contact" onClick={() => setIsOpen(false)} className="!bg-primary !border-primary !text-white !px-6 !py-3 !text-base !font-bold hover:!brightness-90">
+                            Me contacter
+                        </ButtonPrimary>
                     </div>
                 </div>
             )}
