@@ -512,6 +512,8 @@
         "location": "Paris, France",
         "placeHolderAvailablity": "Disponibilités",
         "availablity": "Freelance et CDI",
+        "calendlyTitle": "Réservez un échange",
+        "calendly": "https://calendly.com/ilias-assadki/echange-ilias",
         "form": {
             "name": "Nom",
             "namePlaceholder": "Votre nom complet",
