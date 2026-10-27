@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   description:
     "Ilias Assadki, développeur Python et full-stack basé à Paris : APIs FastAPI et Django, agents IA, applications web React et Next.js. Disponible en freelance et ouvert aux CDI.",
   openGraph: {
-    title: "Ilias Assadki — Développeur Python & Full-Stack",
+    title: "Ilias Assadki — Je conçois des APIs robustes, des agents IA et des applications web complètes, du backend Python jusqu'à l'interface.",
     description:
-      "APIs Python, agents IA et applications web complètes. Disponible en freelance et ouvert aux CDI.",
+      "Développeur Python & Full - Stack",
     url: "https://iassadki.com",
     siteName: "Ilias Assadki",
     locale: "fr_FR",

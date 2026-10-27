@@ -1,15 +1,22 @@
-import { BriefcaseBusiness, FileDown, Linkedin, MapPin } from "lucide-react";
+import React from "react";
+import { Building2, CalendarCheck, LucideIcon, ShieldCheck } from "lucide-react";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import ButtonSecondary from "../ui/ButtonSecondary";
 import fields from '@/app/data/fields.json';
 
+const highlightIcons: Record<string, LucideIcon> = {
+    building: Building2,
+    calendar: CalendarCheck,
+    shield: ShieldCheck,
+};
+
 const Hero: React.FC = () => {
-    const { hero, resume, contact } = fields;
+    const { hero } = fields;
 
     return (
-        <section id="hero" className="relative w-full">
+        <section id="hero" className="relative w-full font-sans">
             <div
-                className="relative flex min-h-[712px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4 pb-16 pt-56 text-center"
+                className="relative flex min-h-[760px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4 pb-20 pt-40 text-center sm:pt-44"
                 style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(248, 247, 255, 0.88) 0%, rgba(203, 193, 255, 0.42) 58%, rgba(255, 255, 255, 0.9) 100%), url(${hero.imagePath})`,
                 }}
@@ -26,57 +33,53 @@ const Hero: React.FC = () => {
                     {hero.availability}
                 </a>
 
-                <p className="font-jakarta text-lg font-semibold text-black/70 sm:text-xl">
-                    {hero.name}
-                </p>
-
-                <h1 className="mt-2 max-w-4xl font-jakarta text-4xl font-bold leading-[1.1] text-black sm:text-[56px]">
+                {/* Titre large et serré, lignes équilibrées */}
+                <h1 className="max-w-6xl text-balance text-[32px] font-extrabold leading-[1.1] tracking-tight text-[#1a1a1a] sm:text-[44px] lg:text-[52px] lg:leading-[1.08] xl:text-[56px]">
                     {hero.title}{" "}
-                    <span className="text-primary underline decoration-4 underline-offset-8">{hero.title_primary}</span>
-                    <br className="hidden sm:block" />{" "}
+                    <span className="text-primary">{hero.title_primary}</span>{" "}
                     {hero.title_suffix}
                 </h1>
 
-                <p className="mt-8 max-w-2xl font-jakarta text-base font-medium text-black/80 sm:text-xl">
-                    {hero.description}
+                {/* Sous-titre en gris, deux phrases courtes */}
+                <p className="mt-6 max-w-2xl text-pretty text-lg font-medium leading-relaxed tracking-tight text-[#525252] sm:text-xl">
+                    {hero.subtitle}
+                    {/* <br className="hidden sm:block" />{" "} */}
+                    {/* {hero.tagline} <span className="text-primary">{hero.tagline_primary}</span> */}
                 </p>
 
-                <ul className="mt-6 flex max-w-2xl flex-wrap justify-center gap-2" aria-label="Technologies principales">
+                {/* Arguments, en pastilles discrètes */}
+                <ul className="mt-8 flex max-w-4xl flex-wrap justify-center gap-3">
+                    {hero.highlights.map(({ icon, label }) => {
+                        const Icon = highlightIcons[icon];
+                        return (
+                            <li
+                                key={label}
+                                className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-[#474747] shadow-sm"
+                            >
+                                <Icon className="h-4 w-4 text-primary" strokeWidth={2.2} aria-hidden="true" />
+                                {label}
+                            </li>
+                        );
+                    })}
+                </ul>
+
+                <div className="mt-10 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row sm:gap-4">
+                    <ButtonPrimary href="#projects" className="!px-8 !py-3.5 !text-base">Voir mes projets</ButtonPrimary>
+                    <ButtonSecondary href="#contact" className="!px-8 !py-3.5 !text-base">Me contacter</ButtonSecondary>
+                </div>
+
+                {/* Stack */}
+                <p className="mt-14 text-sm font-medium text-[#6b6b6b]">{hero.stackLabel}</p>
+                <ul className="mt-4 flex max-w-2xl flex-wrap justify-center gap-2" aria-label={hero.stackLabel}>
                     {hero.stack.map((tech) => (
                         <li
                             key={tech}
-                            className="rounded-full border border-primary/20 bg-white/80 px-3 py-1 text-sm font-semibold text-primary"
+                            className="rounded-full border border-primary/25 bg-primary/15 px-3.5 py-1.5 text-sm font-semibold text-[#1c00a8]"
                         >
                             {tech}
                         </li>
                     ))}
                 </ul>
-
-                <div className="mt-10 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row sm:gap-4">
-                    <ButtonPrimary href="#contact">Me contacter</ButtonPrimary>
-                    <ButtonSecondary href="#projects">Voir mes projets</ButtonSecondary>
-                </div>
-
-                <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-semibold">
-                    <a href={resume.cvLink} download className="inline-flex items-center gap-1.5 text-primary hover:underline">
-                        <FileDown className="h-4 w-4" aria-hidden="true" />
-                        Télécharger mon CV
-                    </a>
-                    <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-primary hover:underline">
-                        <Linkedin className="h-4 w-4" aria-hidden="true" />
-                        LinkedIn
-                    </a>
-                    {contact.malt && (
-                        <a href={contact.malt} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-primary hover:underline">
-                            <BriefcaseBusiness className="h-4 w-4" aria-hidden="true" />
-                            Malt
-                        </a>
-                    )}
-                    <span className="inline-flex items-center gap-1.5 font-normal text-black/60">
-                        <MapPin className="h-4 w-4" aria-hidden="true" />
-                        {hero.location}
-                    </span>
-                </div>
             </div>
         </section>
     );

@@ -1,5 +1,6 @@
 import React from "react";
-import { Building2, CalendarDays, Play, Trophy } from "lucide-react";
+import { Building2, CalendarDays, Trophy } from "lucide-react";
+import VideoEmbed from "../ui/VideoEmbed";
 import fields from '@/app/data/fields.json';
 
 const statIcons = [CalendarDays, Trophy, Building2];
@@ -14,17 +15,9 @@ const Presentation: React.FC = () => {
             </h2>
 
             <div className="mx-auto max-w-7xl">
-                <div
-                    className="flex aspect-video w-full items-center sm:aspect-[2.35/1] sm:min-h-[280px] justify-center rounded-[22px] border-2 border-primary bg-action"
-                    aria-label="Présentation vidéo"
-                >
-                    <button
-                        type="button"
-                        aria-label="Lire la vidéo de présentation"
-                        className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-primary text-primary transition-transform hover:scale-105"
-                    >
-                        <Play className="ml-1 h-8 w-8" strokeWidth={1.5} aria-hidden="true" />
-                    </button>
+                {/* Vidéo en 16:9 pour éviter les bandes noires du lecteur YouTube */}
+                <div className="relative mx-auto aspect-video w-full max-w-4xl overflow-hidden rounded-[22px] border-2 border-primary bg-action">
+                    <VideoEmbed videoId={presentation.videoId} title={presentation.videoTitle} />
                 </div>
 
                 <div className="mt-9 grid grid-cols-1 gap-5 md:grid-cols-3">

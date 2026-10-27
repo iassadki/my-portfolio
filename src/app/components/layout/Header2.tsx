@@ -21,7 +21,6 @@ const Header = () => {
         { href: "/", label: "Accueil", id: "presentation" },
         { href: "/projects", label: "Projets", id: "projects" },
         { href: "/cv", label: "CV", id: "resume" },
-        { href: "/#contact", label: "Contact", id: "contact" },
     ];
     const currentSection =
         pathname === "/projects"

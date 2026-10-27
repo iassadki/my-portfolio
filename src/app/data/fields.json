@@ -4,12 +4,14 @@
     },
     "hero": {
         "availability": "Disponible en freelance · Ouvert aux CDI",
-        "name": "Ilias Assadki",
-        "title": "Développeur",
-        "title_primary": "Python",
-        "title_suffix": "& Full-Stack",
+        "title": "Je conçois des APIs robustes, des agents IA et des applications web complètes,",
+        "title_primary": "du backend Python",
+        "title_suffix": "jusqu'à l'interface.",
         "imagePath": "/images/hero/gradient.png",
-        "description": "Je conçois des APIs robustes, des agents IA et des applications web complètes, du backend Python jusqu'à l'interface.",
+        "subtitle": "Ilias ASSADKI, développeur Python & Full‑Stack basé à Paris.",
+        "tagline": "Je vous accompagne de l'idée",
+        "tagline_primary": "jusqu'à la mise en production.",
+        "stackLabel": "Ma stack au quotidien",
         "stack": [
             "Python",
             "FastAPI",
@@ -18,11 +20,26 @@
             "React",
             "Next.js"
         ],
-        "location": "Basé à Paris"
+        "highlights": [
+            {
+                "icon": "building",
+                "label": "Secteur public & startup"
+            },
+            {
+                "icon": "calendar",
+                "label": "+4 ans d’expérience"
+            },
+            {
+                "icon": "shield",
+                "label": "Code testé et documenté"
+            }
+        ]
     },
     "presentation": {
         "title": "Présentation",
         "imagePath": "/images/presentation/ilias-round.png",
+        "videoId": "HAiQ1_0XPoY",
+        "videoTitle": "Présentation personnelle",
         "name": "Ilias",
         "surname": "Assadki",
         "description": "Développeur Web et Logiciel",
